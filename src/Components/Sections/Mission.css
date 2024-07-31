@@ -1,0 +1,91 @@
+.mission {
+  font-family: 'Arial', sans-serif;
+  padding: 40px 0;
+}
+
+.main-mission {
+  background: #f8f9fa;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.scheme-content {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.scheme-content h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.scheme-content p {
+  font-size: 1.2rem;
+  color: #135D66;
+}
+
+.scheme-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.detail {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: calc(50% - 30px);
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.detail:hover {
+  background-color: #e9ecef;
+  transform: scale(1.05);
+}
+
+.detail .icon {
+  color: #135D66;
+  font-size: 2rem;
+  transition: opacity 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.detail .content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease;
+}
+
+.detail .topic {
+  font-size: 1.5rem;
+  color: #222;
+  margin: 0;
+  opacity: 1;
+}
+
+.detail .description {
+  opacity: 1;
+  font-size: 1rem;
+  color: #666;
+  text-align: center;
+}
+
+.detail:hover .topic, .detail:hover .icon {
+  opacity: 1;
+}
+
+.detail:hover .description {
+  opacity: 1;
+}

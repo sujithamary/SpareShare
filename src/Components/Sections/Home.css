@@ -1,0 +1,73 @@
+.home-sec {
+  margin-top: 6.5rem;
+  padding: 100px 0;
+  background-image: url("https://img.freepik.com/premium-photo/group-happy-kids_257123-15375.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  width: 94.6rem;
+}
+
+
+.home-sec .home-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-top: -3rem;
+}
+
+.home-sec .home-info {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.home-sec .home-info h1,
+.home-sec .home-info h2 {
+  color: #135D66;
+}
+.home-sec .home-info p {
+  color: black;  
+}
+
+.home-sec .home-info h1 {
+  font-size: 2.3rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.home-sec .home-info h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.home-sec .home-info h2 span {
+  color: #000000;
+}
+
+.home-sec .home-info p {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+}
+
+.btn1 {
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: #135D66;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.btn1:hover {
+  background-color: #e6edff;
+  color: #135D66;
+}
