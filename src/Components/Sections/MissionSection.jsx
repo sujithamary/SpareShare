@@ -1,6 +1,4 @@
-import {React, useEffect} from 'react';
 import '../Sections/Mission.css';
-import { FaClock, FaUsers, FaRecycle, FaHandsHelping, FaPeopleCarry, FaBullhorn } from 'react-icons/fa';
 
 const Mission = () => {
   useEffect(() => {

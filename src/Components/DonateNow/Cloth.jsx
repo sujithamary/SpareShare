@@ -1,10 +1,5 @@
-import React, { useState, useEffect } from 'react';
 import './Donate.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser, faPhone, faMapMarkerAlt, faComment } from '@fortawesome/free-solid-svg-icons';
-import { useNavigate } from 'react-router-dom';
 import Footer from '../Sections/Footer';
-import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
 const Cloth = () => {
   const navigate = useNavigate();

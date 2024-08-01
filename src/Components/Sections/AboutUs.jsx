@@ -1,6 +1,4 @@
-import React, { useState } from 'react';
 import '../Sections/AboutUs.css';
-import { FaEye, FaFlag, FaClock, FaRecycle, FaHandsHelping, FaPeopleCarry, FaUsers, FaBullhorn } from 'react-icons/fa';
 
 const AboutUs = () => {
   const [activeIndex, setActiveIndex] = useState(null);

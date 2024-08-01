@@ -1,10 +1,5 @@
-import React, { useState, useEffect } from 'react';
 import './Fund.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser, faPhone, faMapMarkerAlt, faComment, faCalendarAlt, faUtensils } from '@fortawesome/free-solid-svg-icons'; // Added icons for new fields
-import { useNavigate } from 'react-router-dom';
 import Footer from '../Sections/Footer';
-import ArrowBackIcon from '@mui/icons-material/ArrowBack'; 
 
 const Food = () => {
     useEffect(() => {

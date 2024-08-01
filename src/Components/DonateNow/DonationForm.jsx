@@ -1,6 +1,4 @@
-import React, { useState, useEffect } from 'react';
 import '../DonateNow/DonationForm.css';
-import { useNavigate } from 'react-router-dom';
 import Footer from '../Sections/Footer';
 
 const DonationForm = () => {

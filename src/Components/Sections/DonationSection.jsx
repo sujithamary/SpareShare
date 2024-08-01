@@ -1,6 +1,4 @@
-import React from 'react';
 import '../Sections/Donation.css';
-import { Link } from 'react-router-dom';
 
 const DonationSection = () => {
     const donationItems = [

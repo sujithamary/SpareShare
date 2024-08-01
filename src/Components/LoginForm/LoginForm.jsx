@@ -1,8 +1,4 @@
-import React, { useState } from 'react';
 import './LoginForm.css';
-import { FaUser, FaLock, FaFacebook } from "react-icons/fa";
-import { FcGoogle } from "react-icons/fc";
-import { Link, useNavigate } from 'react-router-dom';
 
 const LoginForm = ({ onLogin }) => {
   const navigate = useNavigate();

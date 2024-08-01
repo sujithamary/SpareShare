@@ -1,5 +1,3 @@
-import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import LoginForm from './Components/LoginForm/LoginForm';
 import SignUp from './Components/LoginForm/SignUp';
 import HomeSection from './Components/Sections/HomeSection';

@@ -1,4 +1,3 @@
-import React from 'react'
 import './RatingComponent.css'
 const RatingComponent = () => {
   return (

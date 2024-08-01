@@ -1,7 +1,5 @@
-import React, { useState } from 'react';
 import '../FeedBack/FeedBack.css';
 import RatingComponent from './RatingComponent';
-import { useNavigate } from 'react-router-dom';
 
 const FeedbackForm = () => {
   const [username, setUsername] = useState('');

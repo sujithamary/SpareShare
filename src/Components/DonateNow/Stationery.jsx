@@ -1,8 +1,4 @@
-import React, { useState, useEffect } from 'react';
 import './Donate.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser, faPhone, faMapMarkerAlt, faComment, faPen, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
-import { useNavigate } from 'react-router-dom';
 import Footer from '../Sections/Footer';
 
 const Stationery = () => {

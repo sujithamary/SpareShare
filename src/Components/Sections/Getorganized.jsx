@@ -1,10 +1,4 @@
-import React from 'react';
 import './Getorganized.css';
-import Avatar from '@mui/material/Avatar';
-import Box from '@mui/material/Box';
-import Rating from '@mui/material/Rating';
-import StarIcon from '@mui/icons-material/Star';
-import Slider from 'react-slick';
 
 const Getorganized = () => {
   const labels = {
@@ -240,28 +234,6 @@ const Getorganized = () => {
         </figure>
       </Slider>
     </div>
-  );
-}
-
-function SampleNextArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: 'block', background: 'gray' }}
-      onClick={onClick}
-    />
-  );
-}
-
-function SamplePrevArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: 'block', background: 'gray' }}
-      onClick={onClick}
-    />
   );
 }
 

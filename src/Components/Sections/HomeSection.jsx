@@ -1,4 +1,3 @@
-import React from 'react';
 import '../Sections/Home.css';
 
 const HomeSection = () => {

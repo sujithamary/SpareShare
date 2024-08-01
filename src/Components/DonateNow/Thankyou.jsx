@@ -1,8 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import './ThankYouPage.css';
-import Footer from '../Sections/Footer';
-
 const ThankYouPage = () => {
   const navigate = useNavigate();
   const [countdown, setCountdown] = useState(10);
