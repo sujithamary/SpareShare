@@ -10,7 +10,7 @@ const About = () => {
           </div>
           <div className="col-lg-8 order-first order-lg-last">
             <div className="heading">
-              <h2>What We Do & Why We Do</h2>
+              <h2>What We Do & Why We do</h2>
             </div>
             <p>Spareshare is a pioneering platform dedicated to connecting surplus food from event organizers and individuals with those in need through a network of NGOs and volunteers. Our app facilitates this connection, enabling users to offer or request surplus food, while volunteers can provide delivery or cooking services. A key feature of Spareshare is the '7 o'clock scheme,' where we ensure that every day at 7 PM, needy individuals receive a meal, funded through donations and supplied by our dedicated volunteers. We also track and reward volunteer contributions with a points system, allowing them to redeem points for monetary rewards.
             </p>
