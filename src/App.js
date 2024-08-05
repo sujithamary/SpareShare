@@ -20,6 +20,13 @@ import Stationery from './Components/DonateNow/Stationery';
 import Fund from './Components/DonateNow/Fund';
 import DonationForm from './Components/DonateNow/DonationForm';
 import AboutUs from './Components/Sections/AboutUs';
+import AdminNavbar from './Components/Admin/Components/AdminNavbar/AdminNavbar';
+import AdminHome from './Components/Admin/Components/AdminHome/AdminHome';
+import ManageProducts from './Components/Admin/Components/ManageProducts/ManageProducts';
+import ManageUsers from './Components/Admin/Components/ManageUsers/ManageUsers';
+import AdminFooter from './Components/Admin/Components/AdminFooter/AdminFooter';
+import AdminLanding from './Components/Admin/Components/AdminLandingPage/AdminLanding';
+import AdminMenu from './Components/Admin/Components/AdminMenu/AdminMenu';
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -60,21 +67,16 @@ function App() {
           <Route path="/donation-form" element={<DonationForm />} />
           <Route path="/footer" element={<Footer />} />
           <Route path="/aboutus" element={<AboutUs />} />
+          <Route path="/aNavbar" element={<AdminNavbar/>} />
+          <Route path='/admin/*' element={<AdminLanding/>} >
+            <Route path="aHome" element={<AdminHome/>} />
+            <Route path="aProducts" element={<ManageProducts/>} />
+            <Route path="aUsers" element={<ManageUsers/>} />
+          </Route> 
         </Routes>
       </div>
     </Router>
   );
 }
-
-// export default App;
-
-
-// function App() {
-//   return (
-//     <div>
-//       <h1>Hello World</h1>
-//     </div>
-//   );
-// }
 
 export default App;

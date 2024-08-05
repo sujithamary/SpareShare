@@ -1,0 +1,37 @@
+.a-menu {
+    background-color: #2a3447;
+    color: white;
+    width: 150px;
+
+    .a-item {
+        display: flex;
+        flex-direction: column ;
+        gap: 10px;
+        margin-bottom: 15px;
+
+        .active {
+            background: #384256;
+        }
+        
+        .title {
+            font-size: 12px;
+            font-weight: 200;
+            color: #ddd;
+            padding-left: 20px;
+        }
+
+        .listItem {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px;
+            padding-left: 30px;                    
+            border-radius: 5px;
+            
+            &:hover {
+                background-color: #384256;
+            }
+        }
+
+    }
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Sections/Donation.css';
+import './Donation.css';
 import { Link } from 'react-router-dom';
 
 const DonationSection = () => {
@@ -14,13 +14,13 @@ const DonationSection = () => {
 
     return (
         <section className="don-sec" id="donation">
-            <div className="container">
-                <div className="heading">
+            <div className="don-container">
+                <div className="don-heading">
                     <h2>Resource Redistribution and Donation Handling</h2>
                 </div>
-                <div className="row">
+                <div className="don-row">
                     {donationItems.map((item, index) => (
-                        <div className="col-lg-4" key={index}>
+                        <div className="don-col-4" key={index}>
                             <div className="don-box">
                                 <img src={item.imgSrc} alt={item.altText} />
                                 <h3>{item.title}</h3>

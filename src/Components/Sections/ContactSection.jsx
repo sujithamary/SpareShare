@@ -1,4 +1,4 @@
-import React, { useState , useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import './Contact.css';
 import { FaUser, FaPhone, FaEnvelope } from 'react-icons/fa';
 
@@ -25,15 +25,15 @@ const Contact = () => {
 
   return (
     <section className="contact-section" id="contact">
-      <div className="container">
-        <div className="heading">
+      <div className="contact-container">
+        <div className="contact-heading">
           <h2>Connect With Us</h2>
         </div>
-        <div className="row">
-          <div className="col-lg-12 mt-5">
+        <div className="content-wrapper">
+          <div className="form-wrapper">
             <form className="contact-form" onSubmit={handleSubmit}>
-              <div className="row">
-                <div className="col-lg-6">
+              <div className="form-row">
+                <div className="form-col">
                   <div className="form-group">
                     <FaUser className="form-icon" />
                     <input
@@ -59,7 +59,7 @@ const Contact = () => {
                     />
                   </div>
                 </div>
-                <div className="col-lg-6">
+                <div className="form-col">
                   <div className="form-group">
                     <FaEnvelope className="form-icon" />
                     <textarea
@@ -74,11 +74,16 @@ const Contact = () => {
                     />
                   </div>
                 </div>
-                <div className="col-md-12 mt-0">
-                  <button type="submit" className="btn1 mt-0">Submit Details</button>
+                <div className="form-col-full">
+                  <button type="submit" className="btn-submit">Submit Details</button>
                 </div>
               </div>
             </form>
+          </div>
+          <div className="contact-info">
+            <h3>Contact Information</h3>
+            <p>Email: <a href="mailto:spareshare@gmail.com">spareshare@gmail.com</a></p>
+            <p>Phone: <a href="tel:+1234567890">+1234567890</a></p>
           </div>
         </div>
       </div>

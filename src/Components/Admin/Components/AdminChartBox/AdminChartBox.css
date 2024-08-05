@@ -1,0 +1,45 @@
+.chartBox {
+    display: flex;
+    height: 100%;
+
+    .chartBox-boxInfo {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .chartBox-title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+
+    .chart-Info {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .chart {
+            margin-left: 10px;
+            width: 100%;
+            height: 100%;
+        }
+
+        .chart-texts {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        
+        .chart-percentage {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .chart-duration {
+            font-size: 14px;
+        }
+    }
+}

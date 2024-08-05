@@ -3,10 +3,10 @@ import './Footer.css';
 
 const Footer = () => {
   return (
-    <footer>
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-4">
+    <footer className="footer">
+      <div className="footer-container">
+        <div className="footer-row">
+          <div className="footer-col">
             <div className="col-one">
               <h4>SpareShare</h4>
               <p>Address: 3, Near IT Park, Mahatma Gandhi Road, Mumbai 440000</p>
@@ -14,7 +14,7 @@ const Footer = () => {
               <p>Email: <a href="mailto:spareshare@gmail.com">spareshare@gmail.com</a></p>
             </div>
           </div>
-          <div className="col-lg-4">
+          <div className="footer-col">
             <div className="col-two">
               <h4>Social Media</h4>
               <div className="social">

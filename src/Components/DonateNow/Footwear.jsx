@@ -15,7 +15,7 @@ const Footwear = () => {
     const [mobileNumber, setMobileNumber] = useState('');
     const [pickupLocation, setPickupLocation] = useState('');
     const [message, setMessage] = useState('');
-    const [shoeSize, setShoeSize] = useState(''); // New field for shoe size
+    const [shoeSize, setShoeSize] = useState(''); 
     const [submitted, setSubmitted] = useState(false);
     const navigate = useNavigate();
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import CountUp from 'react-countup';
 import { useInView } from 'react-intersection-observer';
-import '../Sections/RecordsSection.css';
+import './RecordsSection.css';
 
 const RecordsSection = () => {
   const { ref, inView } = useInView({

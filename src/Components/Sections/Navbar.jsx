@@ -4,19 +4,17 @@ import './Navbar.css';
 function Navbar({ isLoggedIn, username }) {
   return (
     <header className="fixed-top">
-      <div className="container">
-        <nav className="navbar navbar-expand-lg navbar-dark">
+      <div className="nav-container">
+        <nav className="navbar">
           <a className="navbar-brand" href="/">SpareShare</a>
-          <button className="navbar-toggler" type="button" data-toggle="collapse"
-            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-            aria-expanded="false" aria-label="Toggle navigation">
+          <button className="navbar-toggler" type="button">
             <span className="navbar-toggler-icon"></span>
           </button>
 
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav ml-auto">
+          <div className="navbar-collapse">
+            <ul className="navbar-nav">
               <li className="nav-item active">
-                <a className="nav-link" href="/">Home <span className="sr-only">(current)</span></a>
+                <a className="nav-link" href="/">Home</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="/donation">Donations</a>
@@ -43,12 +41,12 @@ function Navbar({ isLoggedIn, username }) {
       </div>
 
       <div className="cont-sec">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-6">
+        <div className="nav-container">
+          <div className="cont-row">
+            <div className="cont-col">
               <p>Contact No: <a href="tel:+919876543210">+91 9876543210</a></p>
             </div>
-            <div className="col-lg-6">
+            <div className="cont-col">
               <div className="social">
                 <a href="#"><img src="Asserts/facebook.png" alt="facebook" /></a>
                 <a href="#"><img src="Asserts/instagram.png" alt="instagram" /></a>
