@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import { DataGrid } from '@mui/x-data-grid';
 import "../AdminDataTable/DataTable.css";
 
-const data = [
+const columns= [
   { field: 'id', headerName: 'ID', width: 90 },
   {
     field: 'firstName',

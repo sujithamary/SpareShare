@@ -1,13 +1,11 @@
 .home-sec {
-  margin-top: 5.5rem;
   padding: 100px 0;
   background-image: url("https://img.freepik.com/premium-photo/group-happy-kids_257123-15375.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  position: relative;
-  width: 94.6rem;
+  width: 100dvw;
 }
 
 .home-container {
