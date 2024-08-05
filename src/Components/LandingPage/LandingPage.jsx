@@ -17,7 +17,6 @@ function LandingPage({ isLoggedIn, username }) {
         <About/>
         <Mission/>
         <Contact/>
-        <Getorganized/>
         <Footer/>
     </div>
   )
