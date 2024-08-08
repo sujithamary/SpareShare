@@ -1,5 +1,5 @@
 .a-menu {
-    background-color: #2a3447;
+    background-color: #135d66;
     color: white;
     width: 150px;
 
@@ -10,10 +10,10 @@
         margin-bottom: 15px;
 
         .active {
-            background: #384256;
+            background: #76ABAE;
         }
         
-        .title {
+        .a-title {
             font-size: 12px;
             font-weight: 200;
             color: #ddd;
@@ -25,11 +25,10 @@
             align-items: center;
             gap: 8px;
             padding: 10px;
-            padding-left: 30px;                    
-            border-radius: 5px;
+            padding-left: 30px; 
             
             &:hover {
-                background-color: #384256;
+                background-color: #76ABAE;
             }
         }
 

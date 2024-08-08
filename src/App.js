@@ -15,18 +15,17 @@ import Cloth from './Components/DonateNow/Cloth';
 import ThankYouPage from './Components/DonateNow/Thankyou';
 import Food from './Components/DonateNow/Food';
 import Footwear from './Components/DonateNow/Footwear';
-import Gadgets from './Components/DonateNow/Gadgets';
 import Stationery from './Components/DonateNow/Stationery';
 import Fund from './Components/DonateNow/Fund';
-import DonationForm from './Components/DonateNow/DonationForm';
-import AboutUs from './Components/Sections/AboutUs';
 import AdminNavbar from './Components/Admin/Components/AdminNavbar/AdminNavbar';
 import AdminHome from './Components/Admin/Components/AdminHome/AdminHome';
 import ManageProducts from './Components/Admin/Components/ManageProducts/ManageProducts';
 import ManageUsers from './Components/Admin/Components/ManageUsers/ManageUsers';
-import AdminFooter from './Components/Admin/Components/AdminFooter/AdminFooter';
 import AdminLanding from './Components/Admin/Components/AdminLandingPage/AdminLanding';
-import AdminMenu from './Components/Admin/Components/AdminMenu/AdminMenu';
+import DonationFormMain from './Components/DonationForm/DonationFormMain';
+import AboutUsLandingPage from './Components/AboutUs/AboutUsLandingPage';
+import Grocery from './Components/DonateNow/Grocery';
+import DonationForm from './Components/DonationForm/DonationFormMain';
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -61,18 +60,18 @@ function App() {
           <Route path="/cloth" element={<Cloth />} />
           <Route path="/food" element={<Food />} />
           <Route path="/footwear" element={<Footwear />} />
-          <Route path="/gadgets" element={<Gadgets />} />
+          <Route path="/grocery" element={<Grocery />} />
           <Route path="/stationery" element={<Stationery />} />
           <Route path="/fund" element={<Fund />} />
-          <Route path="/donation-form" element={<DonationForm />} />
           <Route path="/footer" element={<Footer />} />
-          <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/aNavbar" element={<AdminNavbar/>} />
           <Route path='/admin/*' element={<AdminLanding/>} >
             <Route path="aHome" element={<AdminHome/>} />
             <Route path="aProducts" element={<ManageProducts/>} />
             <Route path="aUsers" element={<ManageUsers/>} />
           </Route> 
+          <Route path='/aboutus' element={<AboutUsLandingPage/>} />
+          <Route path="/donationform" element={<DonationForm/>}/>
         </Routes>
       </div>
     </Router>

@@ -4,8 +4,6 @@ import { CgProfile } from 'react-icons/cg';
 import { IoHome, IoBarChartSharp } from 'react-icons/io5';
 import { FaUser, FaUserTie, FaDonate, FaCalendar } from 'react-icons/fa';
 import { MdPostAdd, MdEditNote, MdBackup } from 'react-icons/md';
-import { AiOutlineAppstore } from 'react-icons/ai';
-import { SiFormspree } from 'react-icons/si';
 import { IoMdSettings, IoLogoBuffer } from 'react-icons/io';
 import '../AdminMenu/AdminMenu.css';
 
@@ -60,54 +58,6 @@ const AdminMenu = () => {
             ],
         },
         {
-            id: 3,
-            title: "General",
-            listitems: [
-              {
-                  id: 1,
-                  path: "/admin/aElements",
-                  name: "Elements",
-                  icon: <AiOutlineAppstore />
-              },
-              {
-                  id: 2,
-                  path: "/admin/aNotes",
-                  name: "Notes",
-                  icon: <MdEditNote />
-              },
-              {
-                id: 3,
-                path: "/admin/aForms",
-                name: "Forms",
-                icon: <SiFormspree />
-              },
-              {
-                id: 4,
-                path: "/admin/aCalendar",
-                name: "Calendar",
-                icon: <FaCalendar />
-              }
-            ],
-        },
-        {
-            id: 4,
-            title: "Maintenance",
-            listitems: [
-              {
-                  id: 1,
-                  path: "/admin/aSettings",
-                  name: "Settings",
-                  icon: <IoMdSettings />
-              },
-              {
-                  id: 2,
-                  path: "/admin/aBackups",
-                  name: "Backups",
-                  icon: <MdBackup />
-              }
-            ],
-        },
-        {
             id: 5,
             title: "Analytics",
             listitems: [
@@ -131,7 +81,7 @@ const AdminMenu = () => {
     <div className='a-menu'>
         {menuItem.map((section) => (
             <div key={section.id} className="a-item">
-                <span className="title">{section.title.toUpperCase()}</span>
+                <span className="a-title">{section.title.toUpperCase()}</span>
                 {section.listitems.map((listitem) => (
                     <NavLink 
                         to={listitem.path} 

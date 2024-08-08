@@ -1,23 +1,32 @@
 import React, { useState } from 'react';
 import './LoginForm.css';
-import { FaUser, FaLock, FaFacebook } from "react-icons/fa";
+import { FaLock, FaFacebook } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
+import { MdEmail } from 'react-icons/md';
 import { Link, useNavigate } from 'react-router-dom';
+import { loginHandler } from './axios/loginHandler';
 
-const LoginForm = ({ onLogin }) => {
+const LoginForm =  ({ onLogin }) => {
   const navigate = useNavigate();
 
-  const [username, setUsername] = useState('');
+  const [form, setForm] = useState({ email: '', password: '' });
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    onLogin(username);
-    navigate('/');
+    const success = await loginHandler(form.email, form.password);
+    if (success) {
+      navigate('/');
+    } else {
+      alert('Invalid credentials, please try again.');
+    }
   };
 
-  const handleChange = (event) => {
-    setUsername(event.target.value);
-  };
+  const handleChange = (e) => {
+    setForm({
+        ...form,
+        [e.target.name]: e.target.value,
+    });
+};
 
   return (
     <div className='body'>
@@ -25,12 +34,12 @@ const LoginForm = ({ onLogin }) => {
         <form onSubmit={handleSubmit}>
           <h1>Login</h1>
           <div className="input-box">
-            <input type="text" placeholder="Username" required onChange={handleChange} />
-            <FaUser className='icon' />
+            <input type="text" placeholder="Email" name="email" value={form.email} required onChange={handleChange} />
+            <MdEmail className="l-icon" />
           </div>
           <div className="input-box">
-            <input type="password" placeholder="Password" required />
-            <FaLock className='icon' />
+            <input type="password" name = "password" placeholder="Password" required value={form.password} onChange={handleChange} />
+            <FaLock className='l-icon' />
           </div>
           <div className="remember-forgot">
             <label><input type="checkbox" />Remember me</label>

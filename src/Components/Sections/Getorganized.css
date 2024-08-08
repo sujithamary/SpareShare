@@ -1,61 +1,45 @@
-/* Container and General Styles */
-.g-container {
-  width: 100%;
-  max-width: 90rem;
-  margin: 0 auto;
-}
 
-.getorg {
-  padding-top: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  margin-bottom: 60px;
-}
-
-.container {
-  text-align: center;
-}
-
-.heading h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-/* Testimonial Card Styles */
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
 figure.snip1157 {
   font-family: 'Raleway', Arial, sans-serif;
   position: relative;
   overflow: hidden;
-  margin: 0 1rem;
+  margin-top: 50px;
+  margin-bottom: 50px;
   min-width: 250px;
   max-width: 350px;
   width: 100%;
   color: #333;
   text-align: left;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  border-radius: 8px;
-  background-color: #fafafa;
+  box-shadow: none !important;
+}
+figure.snip1157 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
   transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
 }
-
-figure.snip1157:hover {
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+figure.snip1157 img {
+  max-width: 100%;
+  vertical-align: middle;
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  margin: 40px 0 0 10px;
 }
-
 figure.snip1157 blockquote {
   display: block;
   border-radius: 8px;
   position: relative;
+  background-color: #fafafa;
   padding: 25px 50px 30px 50px;
   font-size: 0.8em;
   font-weight: 500;
   margin: 0;
-  line-height: 1.6em;
+  line-height: 1.8em;
   font-style: italic;
 }
-
 figure.snip1157 blockquote:before,
 figure.snip1157 blockquote:after {
   font-family: 'FontAwesome';
@@ -65,18 +49,15 @@ figure.snip1157 blockquote:after {
   opacity: 0.3;
   font-style: normal;
 }
-
 figure.snip1157 blockquote:before {
   top: 25px;
   left: 20px;
 }
-
 figure.snip1157 blockquote:after {
   content: "\201D";
   right: 20px;
   bottom: 0;
 }
-
 figure.snip1157 .arrow {
   top: 100%;
   width: 0;
@@ -87,7 +68,6 @@ figure.snip1157 .arrow {
   margin: 0;
   position: absolute;
 }
-
 figure.snip1157 .author {
   position: absolute;
   bottom: 45px;
@@ -95,33 +75,33 @@ figure.snip1157 .author {
   margin: 0;
   text-transform: uppercase;
   color: #ffffff;
+  -webkit-transform: translateY(50%);
   transform: translateY(50%);
-}
 
+}
 figure.snip1157 .author h5 {
   opacity: 0.8;
   margin: 0;
   font-weight: 800;
 }
-
 figure.snip1157 .author h5 span {
   font-weight: 400;
   text-transform: none;
   padding-left: 5px;
 }
 
-figure.snip1157 img {
-  max-width: 100%;
-  vertical-align: middle;
-  height: 90px;
-  width: 90px;
-  border-radius: 50%;
-  margin: 40px 0 0 10px;
+html {
+  height: 100%;
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .figure.snip1157 {
-    max-width: 100%;
-  }
+.getorg {  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+  margin: 0;
+  height: 100%;  
+  gap: 30px; 
 }
+
+

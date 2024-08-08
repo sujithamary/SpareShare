@@ -1,37 +1,34 @@
-import React from 'react';
-import { IoSearchSharp } from "react-icons/io5";
-import { IoMdNotifications } from "react-icons/io";
-import { AiOutlineAppstore } from "react-icons/ai";
-import { FaExpand } from "react-icons/fa";
-import { IoMdSettings } from "react-icons/io";
-import { MdAdminPanelSettings } from "react-icons/md";
-import { CgProfile } from "react-icons/cg";
+import React, { useState } from 'react';
+import { MdAdminPanelSettings, MdMessage } from 'react-icons/md';
+import { CgProfile } from 'react-icons/cg';
+import SideMenu from './SideMenu'; // Adjust the path as needed
 import "../AdminNavbar/AdminNavbar.css";
 
 const AdminNavbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleMessageClick = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
-    <div className='a-navbar'>
+    <>
+      <div className='a-navbar'>
         <div className='a-logo'>
-            <MdAdminPanelSettings />
-            <span>Admin</span>
+          <MdAdminPanelSettings />
+          <span>Admin</span>
         </div>
         <div className='a-icons'>
-            <IoSearchSharp />
-            <AiOutlineAppstore />
-            <FaExpand />
-            <div className='a-notifications'>
-                <IoMdNotifications />
-                <span>1</span>
-            </div>
-            <IoMdSettings />            
-            <div className='a-user'>
-                <CgProfile />
-                <span>Seshu</span>
-            </div>
+          <MdMessage onClick={handleMessageClick} />
+          <div className='a-user'>
+            <CgProfile />
+            <span>Suji</span>
+          </div>
         </div>
-    </div>
+      </div>
+      <SideMenu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
+    </>
   );
 }
 
 export default AdminNavbar;
-

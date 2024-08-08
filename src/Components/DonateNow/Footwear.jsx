@@ -1,230 +1,143 @@
 import React, { useState, useEffect } from 'react';
-import './Donate.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser, faPhone, faMapMarkerAlt, faComment, faShoePrints } from '@fortawesome/free-solid-svg-icons';
-import { useNavigate } from 'react-router-dom';
-import Footer from '../Sections/Footer';
-import ArrowBackIcon from '@mui/icons-material/ArrowBack'; // Import the back arrow icon
+import '../DonateNow/Donate.css';
+import { Link, useNavigate } from 'react-router-dom';
+import { FaDonate, FaBullhorn, FaHandsHelping, FaShoePrints } from 'react-icons/fa';
 
 const Footwear = () => {
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
+  const navigate = useNavigate();
 
-    const [username, setUsername] = useState('');
-    const [mobileNumber, setMobileNumber] = useState('');
-    const [pickupLocation, setPickupLocation] = useState('');
-    const [message, setMessage] = useState('');
-    const [shoeSize, setShoeSize] = useState(''); 
-    const [submitted, setSubmitted] = useState(false);
-    const navigate = useNavigate();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
-    const handleUsernameChange = (event) => {
-        setUsername(event.target.value);
-    };
+  const [visibleImages, setVisibleImages] = useState(8);
+  const [selectedImage, setSelectedImage] = useState(null);
 
-    const handleMobileNumberChange = (event) => {
-        setMobileNumber(event.target.value);
-    };
+  const handleImageClick = (imageSrc) => setSelectedImage(imageSrc);
+  const handleClosePopup = () => setSelectedImage(null);
+  const handleLoadMore = () => setVisibleImages((prevVisibleImages) => prevVisibleImages + 4);
 
-    const handlePickupLocationChange = (event) => {
-        setPickupLocation(event.target.value);
-    };
+  const steps = [
+    {
+      id: 'Donate Footwear',
+      imgSrc: <FaShoePrints size={80} />, 
+      description: 'Clear out your closet and donate your gently-used footwear. Every pair can help someone in need.',
+    },
+    {
+      id: 'Spread the Word',
+      imgSrc: <FaBullhorn size={80} />, 
+      description: 'Encourage friends and family to donate their old shoes. Your efforts can make a significant impact!',
+    },
+    {
+      id: 'Volunteer',
+      imgSrc: <FaHandsHelping size={80} />, 
+      description: 'Join our team of volunteers to assist with sorting, packing, and distributing footwear donations.',
+    },
+  ];
 
-    const handleMessageChange = (event) => {
-        setMessage(event.target.value);
-    };
+  const images = [
+    'assets/fr-1.jpeg',
+    'assets/fr-2.jpeg',
+    'assets/fr-3.jpeg',
+    'assets/fr-4.jpeg',
+    'assets/fr-5.jpeg',
+    'assets/fr-6.jpeg',
+    'assets/fr-7.jpeg',
+    'assets/fr-8.jpeg',
+    'assets/fr-9 (2).jpeg',
+    'assets/fr-10.jpeg',
+    'assets/fr-11.jpeg',
+    'assets/fr-12.jpeg',
+  ];
 
-    const handleShoeSizeChange = (event) => {
-        setShoeSize(event.target.value);
-    };
-
-    const handleSubmit = (event) => {
-        event.preventDefault();
-
-        if (!username || !mobileNumber || !pickupLocation || !message || !shoeSize) {
-            alert('Please fill in all fields before submitting.');
-            return;
-        }
-
-        setTimeout(() => {
-            console.log('Form submitted:', { username, mobileNumber, pickupLocation, message, shoeSize });
-            setSubmitted(true);
-        }, 0);
-
-        navigate('/thank-you');
-    };
-
-    const [visibleImages, setVisibleImages] = useState(8);
-    const [selectedImage, setSelectedImage] = useState(null);
-
-    const handleImageClick = (imageSrc) => {
-        setSelectedImage(imageSrc);
-    };
-
-    const handleClosePopup = () => {
-        setSelectedImage(null);
-    };
-
-    const handleLoadMore = () => {
-        setVisibleImages((prevVisibleImages) => prevVisibleImages + 4); 
-    };
-
-    const images = [
-        'Asserts/fr-1.jpeg',
-        'Asserts/fr-2.jpeg',
-        'Asserts/fr-3.jpeg',
-        'Asserts/fr-4.jpeg',
-        'Asserts/fr-5 copy.jpeg',
-        'Asserts/fr-6.jpeg',
-        'Asserts/fr-7.jpeg',
-        'Asserts/fr-8.jpeg',
-        'Asserts/fr-9 (2).jpeg',
-        'Asserts/fr-10.jpeg',
-        'Asserts/fr-11.jpeg',
-        'Asserts/fr-12.jpeg',
-    ];
-
-    const handleBack = () => {
-        navigate(-1); // Go back to the previous page
-    };
-
-    return (
-        <div>
-            <button
-                onClick={handleBack}
-                style={{
-                    background: 'transparent',
-                    border: 'none',
-                    cursor: 'pointer',
-                    margin: '10px',
-                    padding: '5px',
-                }}
-            >
-                <ArrowBackIcon />
-            </button>
-            <section className="mission" id="mission-id">
-                <div className="container">
-                    <div className="heading">
-                        <h2>Spareshare Footwear Donation Initiative</h2>
-                        <p><span>Join us in making a difference!</span></p>
-                        <p>At Spareshare, we are committed to helping those in need by providing them with quality footwear. Your donations of gently-used shoes can help bring comfort and support to individuals and families facing challenging times.</p>
-                        <p><span>How You Can Help:</span></p> 
-                        <p><ui>
-                            <li><span>Donate Footwear:</span> Clear out your closet and donate shoes that are in good condition. Every pair can make a difference.</li>
-                            <li><span>Spread the Word:</span> Encourage friends and family to contribute to the cause.</li>
-                            <li><span>Volunteer:</span> Join our team of dedicated volunteers to help with sorting, packing, and distributing donations.</li></ui></p> 
-                        <p>Your contributions can provide much-needed support and improve the lives of those in need. Thank you for your generosity!</p> 
-                    </div>        
-                </div>
-                <div className="gallery-sec">
-                    <div className="container">
-                        <div className='heading'>
-                            <h2>Spreading Comfort Through Footwear Donations</h2>
-                            <p>Our dedicated volunteers work hard to ensure that every pair of donated shoes finds a new home. Each donation makes a significant impact, helping individuals walk confidently and comfortably.</p>
-                        </div>
-                        <div className="image-container">
-                            {images.slice(0, visibleImages).map((image, index) => (
-                                <div className="image" key={index} onClick={() => handleImageClick(image)}>
-                                    <img src={image} alt={`gallery-img-${index}`} />
-                                </div>
-                            ))}
-                            {visibleImages < images.length && (
-                                <div className="load-more" onClick={handleLoadMore}>
-                                    <span>+ Load More</span>
-                                </div>
-                            )}
-                        </div>
-                    </div>
-                    {selectedImage && (
-                        <div className="pop-image">
-                            <span onClick={handleClosePopup}>&times;</span>
-                            <img src={selectedImage} alt="gallery-img" />
-                        </div>
-                    )}
-                </div>
-            </section>
-            <div className='container'>
-                <div className='heading'>
-                    <h2>Donate Now and Be a Part of the Change!</h2>
-                    <p>Thank you for your support in helping us build a more compassionate and caring community.</p>
-                </div>
-            </div>
-            <div className="f-wrapper">
-                <div className="feedback-forme">
-                    <h2 className="fee">Donation Form</h2>
-                    <form onSubmit={handleSubmit} className="ffform">
-                        <label htmlFor="username" className="lab">
-                            <FontAwesomeIcon icon={faUser} /> Username
-                        </label>
-                        <input
-                            className="int"
-                            type="text"
-                            id="username"
-                            name="username"
-                            value={username}
-                            onChange={handleUsernameChange}
-                            placeholder="Enter your username"
-                        />
-
-                        <label htmlFor="mobileNumber" className="lab">
-                            <FontAwesomeIcon icon={faPhone} /> Mobile Number
-                        </label>
-                        <input
-                            className="int"
-                            type="text"
-                            id="mobileNumber"
-                            name="mobileNumber"
-                            value={mobileNumber}
-                            onChange={handleMobileNumberChange}
-                            placeholder="Enter your mobile number"
-                        />
-
-                        <label htmlFor="pickupLocation" className="lab">
-                            <FontAwesomeIcon icon={faMapMarkerAlt} /> Pickup Location
-                        </label>
-                        <input
-                            className="int"
-                            type="text"
-                            id="pickupLocation"
-                            name="pickupLocation"
-                            value={pickupLocation}
-                            onChange={handlePickupLocationChange}
-                            placeholder="Enter the pickup location"
-                        />
-
-                        <label htmlFor="shoeSize" className="lab">
-                            <FontAwesomeIcon icon={faShoePrints} /> Shoe Size
-                        </label>
-                        <input
-                            className="int"
-                            type="text"
-                            id="shoeSize"
-                            name="shoeSize"
-                            value={shoeSize}
-                            onChange={handleShoeSizeChange}
-                            placeholder="Enter the shoe size"
-                        />
-
-                        <label htmlFor="message" className="lab">
-                            <FontAwesomeIcon icon={faComment} /> Message
-                        </label>
-                        <textarea
-                            className="int"
-                            id="message"
-                            name="message"
-                            value={message}
-                            onChange={handleMessageChange}
-                            placeholder="Type your message here..."
-                        ></textarea>
-
-                        <button type="submit" className="sub">Submit</button>
-                    </form>
-                </div>
-            </div>
-            <Footer/>
+  return (
+    <div className="footwear-container">
+      <button
+        onClick={() => navigate(-1)}
+        className="back-button"
+      >
+        &larr; Back
+      </button>
+      <section className="donation-initiative">
+        <div className="header-section">
+          <div className="header-content">
+            <h2 className="title"><span><FaShoePrints /></span>SpareShare Footwear Donation Initiative</h2>
+            <p className="subtitle">Join Us in Making a Difference!</p>
+          </div>
+          <p className="content">
+            At SpareShare, we are dedicated to providing essential footwear to those in need. Our footwear donation initiative aims to offer clean, gently-used shoes to individuals and families facing challenging times. By donating your pre-loved footwear, you help us ensure that everyone has access to essential footwear.
+          </p>
+          <p className="additional-info">
+            Your generosity provides comfort and protection during daily activities, boosts self-esteem, and ensures that everyone has access to proper footwear. Each donation not only meets a basic need but also restores dignity and brings comfort to those who might otherwise go without. Together, we can make a tangible impact, one pair of shoes at a time, and build a more compassionate and supportive community for all.
+          </p>
+          <p className="additional-info">
+            Every pair of shoes donated is more than just footwear; it's a symbol of care and solidarity. Your contribution helps bridge the gap between those with excess and those in need, fostering a sense of unity and support within our community. By participating in our footwear donation initiative, you are not only providing essential items but also inspiring others to take action and join the movement. Together, we create a ripple effect of kindness that extends beyond our immediate circle, touching lives and making a significant difference in the lives of countless individuals. Let’s come together to make our community a better place, one donation at a time.
+          </p>
+          <div className='header-img'>
+            <img src='assets/footwearVector.png' alt="Footwear" />
+          </div>
         </div>
-    );
+        <h3 className="section-title">How You Can Help:</h3>
+        <div className="steps-container">
+          {steps.map((step) => (
+            <div className="step-card" key={step.id}>
+              <div className="icon-container">
+                {step.imgSrc}
+              </div>
+              <div className="step-title">{step.id}</div>
+              <div className="step-description">{step.description}</div>
+            </div>
+          ))}
+        </div>
+        <div className="gallery-section">
+          <div className="gallery-header">
+            <h2 className="gallery-title">Stepping Forward with Footwear Donations</h2>
+            <p>
+              Our dedicated team works tirelessly to distribute clean, gently-used footwear. Each donation brings comfort and dignity, showcasing the powerful impact of community generosity.
+            </p>
+            <p>
+              The efforts of our team extend far beyond the immediate act of distributing shoes. They embody compassion and commitment, transforming each donation into a beacon of hope and a tangible source of support for those who need it most. Through their hard work, they help create a network of care that strengthens our community. Every pair of shoes donated, and every hour volunteered, contributes to a larger mission of building a supportive and empathetic society. By joining forces, we can amplify our impact, ensuring that every donation finds its way to someone who truly needs it and fostering a culture of generosity and mutual aid.
+            </p>
+          </div>
+          <div className="image-gallery">
+            {images.slice(0, visibleImages).map((image, index) => (
+              <div className="gallery-item" key={index} onClick={() => handleImageClick(image)}>
+                <img src={image} alt={`gallery-img-${index}`} />
+              </div>
+            ))}
+            {visibleImages < images.length && (
+              <div className="load-more" onClick={handleLoadMore}>
+                <span>+ Load More</span>
+              </div>
+            )}
+          </div>
+        </div>
+      </section>
+      {selectedImage && (
+        <div className="popup-image">
+          <span onClick={handleClosePopup} className="close-button">&times;</span>
+          <img src={selectedImage} alt="Selected" />
+        </div>
+      )}
+      <div className="donation-call-to-action">
+        <div className="cta-content">
+          <h1>
+            <span className="cta-subtitle">
+              Your generous contribution awaits, 
+              <span className="cta-subtitle"> ready to make a real difference in someone's life.</span>
+              <br />
+              <span className="cta-subtitle">
+                Every donation helps us provide essential footwear to those in need, transforming lives and spreading comfort. <br />
+                Join us in our mission to build a more compassionate world—one pair of shoes at a time.
+              </span>
+            </span>
+          </h1>
+          <Link to="/donationform"><button className="cta-button">Donate Now</button></Link>
+        </div>
+        <img src="assets/img-2.jpeg" alt="Donation" className="cta-image" />
+      </div>
+    </div>
+  );
 };
 
 export default Footwear;

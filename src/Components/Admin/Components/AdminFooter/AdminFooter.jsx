@@ -4,7 +4,7 @@ const AdminFooter = () => {
   return (
     <div className='a-footer'>
       <span>Admin</span>
-      <span>Sesha Priya Admin Dashboard</span>      
+      <span>Sujithamary Admin Dashboard</span>      
     </div>
   );
 }

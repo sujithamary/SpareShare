@@ -5,7 +5,7 @@ import '../AdminTopBox/AdminTopBox.css'
 const AdminTopBox = () => {
   return (
     <div className='topBox'>
-      <h1>Top Deals</h1>
+      <h1>Top Donors</h1>
       <div className="topBox-list">
         {topDealUsers.map(user => (
             <div className="topbox-listitem" key={user.id}>

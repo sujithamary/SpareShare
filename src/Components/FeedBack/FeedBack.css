@@ -1,58 +1,69 @@
-.feedback-forme {
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    margin-top: 50px;
-    font-family: cursive;
-    margin-left: 300px;
-   
-  }
-  .fee {
-    color:#135D66;
-  }
-  
-  .ffform {
-    margin-top: 20px;
-  }
-  
-  .lab {
-    display: block;
-    margin-bottom: 8px;
-    color:#135D66;
-    font-weight: 500;
-  }
-  
-  .int{
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .sub {
-    background-color: #135D66;
-    color: #fff;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;    
-    cursor: pointer;
-  }
-  
-  .sub:hover {
-    background-color: #454b45;
-  }
-  
-  .success-messagee {
-    color:#514caf;
-    font-weight: bold;
-    margin-top: 16px;
-  }
-  .FF{
-    background-color:#135D66
-  }
+.feedback-form{
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  font-family: cursive;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: 500px;
+  margin-top: 100px;
+}
 
-  .f-wrapper {
-    color: #135D66;
-  }
+.feedback-heading{
+  color: #135D66;
+}
+
+.feedbackform {
+  margin-top: 20px;
+}
+
+.lab {
+  display: block;
+  margin-bottom: 8px;
+  color: #135D66;
+  font-weight: 500;
+}
+
+.feedback-input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.sub {
+  background-color: #135D66;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.sub:hover {
+  background-color: #0e4a52;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.heading h2 {
+  color: #333;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.heading p {
+  color: #777;
+  font-size: 16px;
+  line-height: 1.5;
+}
+

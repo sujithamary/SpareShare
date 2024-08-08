@@ -1,7 +1,7 @@
 .mission {
   font-family: 'Arial', sans-serif;
   padding: 100px 0;
-  /* background-color: #135D66; */
+  background-color: #135D66;
   background-color: hsl(185, 100%, 98%);
 }
 
@@ -20,6 +20,7 @@
   max-width: 1300px;
   padding: 0 15px;
   margin-left: 100px;
+  margin-top: 100px;
 }
 
 .main-mission {
@@ -43,6 +44,7 @@
 }
 
 .scheme-content p {
+  margin-top: 10px;
   font-size: 1.2rem;
   color: #135D66;
 }
@@ -100,6 +102,7 @@
   font-size: 1rem;
   color: #666;
   text-align: center;
+  margin-bottom: 15px;
 }
 
 .detail:hover .topic,

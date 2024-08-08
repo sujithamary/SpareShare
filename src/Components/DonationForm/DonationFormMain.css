@@ -1,0 +1,145 @@
+.donation-form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.donation-form-container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.donation-form-main {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.form-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.step span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #ccc;
+  color: #fff;
+  margin-right: 8px;
+}
+
+.step.active span {
+  background-color: #135d66;
+}
+
+.form-section {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 25px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.prev-btn,
+.next-btn,
+.submit-btn {
+  background-color: #135d66;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.prev-btn:hover,
+.next-btn:hover,
+.submit-btn:hover {
+  background-color: #76ABAE;
+}
+
+.add-item-btn,
+.remove-item-btn {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.remove-item-btn {
+  background-color: #dc3545;
+}
+
+.add-item-btn:hover,
+.remove-item-btn:hover {
+  opacity: 0.9;
+}
+
+.item-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item-row input {
+  width: 45%;
+}
+
+.food-category,
+.general-category,
+.fund-category {
+  margin-top: 10px;
+}
+
+.general-category .form-input,
+.fund-category .form-input {
+  margin-bottom: 10px;
+}

@@ -1,137 +1,241 @@
-.feedback-forme {
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    font-family: cursive;
-    
-}
-.fee {
-    color:#135D66;
+.back-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #0e4a52;
+  padding: 10px;
+  margin: 20px 0;
 }
 
-.ffform {
-    margin-top: 20px;
-  }
-  
-  .lab {
-    display: block;
-    margin-bottom: 8px;
-    color:#135D66;
-    font-weight: 500;
-  }
-  
-  .int{
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .sub {
-    background-color: #135D66;
-    color: #fff;
-    padding: 10px 30px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-left: 10rem;
-  }
-  
-  .sub:hover {
-    background-color: #454b45;
-  }
-  
-  .success-messagee {
-    color:#514caf;
-    font-weight: bold;
-    margin-top: 16px;
-  }
-  .FF{
-    background-color:#135D66
-  }
-
-  .f-wrapper {
-    color: #135D66;
-    width: 50rem;
-    margin-left: 200px;
-    margin-bottom: 30px;
-  }
-
-  .heading p {
-    margin-left: 50px;
-  }
-
-.gallery-sec{
-    position: relative;
-	padding: 50px 0;
+.donation-initiative {
+  width: 100%;
+  padding: 20px;
 }
 
-.gallery-sec .image-container{
-    margin-left: 30px;
-    position: relative;
-    margin-top: 30px;
-	display: flex;
-	flex-wrap: wrap;
-	gap: 15px;
-	justify-content:center;
-	padding: 10px;
+.header-section {
+  margin-bottom: 30px;
 }
 
-.gallery-sec .image-container .image{
-	height: 200px;
-	width: 300px;
-	box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-	cursor: pointer;
-	overflow: hidden;
+.header-content {
+  display: flex;
+  flex-direction: column;
 }
 
-.gallery-sec .image-container .image img{
-	height: 100%;
-	width: 100%;
-	border: 5px solid #d4d4d4;
-	object-fit: cover;
-	transition: 0.2s linear;
+.header-img img {
+  margin-top: -700px;
+  margin-left: 850px;
+  width: 40%;
+  height: auto;
 }
 
-.gallery-sec .image-container .image:hover img{
-	transform: scale(1.1);
+.header-content .title span {
+  display: flex;  
+  color: #135d66;
+  font-size: 40px;
+  padding-right: 12px;
 }
 
-.gallery-sec .pop-image{
-	position: fixed;
-	left: 0;
-	top: 0;
-	background: rgba(0, 0, 0, 0.8);
-	height: 100%;
-	width: 100%;
-	z-index: 100;
-	display: none;
+.title {
+  color: #0e4a52;
+  font-size: 36px;
+  margin-bottom: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -50px;
 }
 
-.gallery-sec .pop-image span{
-	position: absolute;
-	top: 120px;
-	right: 50px;
-	font-size: 60px;
-	font-weight: bolder;
-	color: #ffffff;
-	cursor: pointer;
-	z-index: 100;
+.subtitle {
+  font-size: 32px;
+  color: #0e4a52;
+  font-weight: 600;
+  margin-bottom: 30px;
+  margin-left: 30px;
 }
 
-.gallery-sec .pop-image img{
-	position: absolute;
-	top: 55%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	border: 3px solid #ffffff;
-	width: 750px;
-	object-fit: cover;
+.content, .additional-info {
+  max-width: 800px;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: left;
+  margin-bottom: 30px;
+  margin-left: 30px;
+}
+
+.section-title {
+  color: #0e4a52;
+  font-size: 28px;
+  font-weight: 600;
+  margin-top: 70px;
+  margin-bottom: 40px;
+  margin-left: 30px;
+}
+
+.steps-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.step-card {
+  background-color: #135d66;
+  color: white;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  width: 280px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin: 10px;
+}
+
+.step-card:hover {
+  background-color: #76abae;
+  transform: scale(1.05);
+}
+
+.icon-container {
+  margin-bottom: 15px;
+}
+
+.step-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.step-description {
+  font-size: 16px;
+}
+
+.gallery-section {
+  margin-top: 70px;
+  padding: 50px 20px;
+}
+
+.gallery-header {
+  margin-bottom: 50px;
+}
+
+.gallery-title {
+  color: #0e4a52;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  margin-left: 20px;
+}
+
+.gallery-header p {
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: left;
+  margin-bottom: 30px;
+  margin-left: 20px;
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.gallery-item {
+  height: 250px;
+  width: 300px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.gallery-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border: 5px solid #d4d4d4;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
 }
 
 .load-more {
-    cursor: pointer;
+  cursor: pointer;
+  font-size: 18px;
+  color: #0e4a52;
+  margin-top: 20px;
 }
 
+.popup-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-image .close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 60px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.popup-image img {
+  border: 3px solid #ffffff;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.donation-call-to-action {
+  display: flex;
+  flex-direction: row;
+  background-color: #0e4a52;
+  padding: 50px 20px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1560px;
+}
+
+.cta-subtitle {
+  font-weight: normal;
+  font-size: 24px;
+  color: #d4d4d4;
+}
+
+
+.cta-button {
+  width: 200px;
+  height: 50px;
+  background-color: #76abae;
+  border-radius: 5px;
+  border: none;
+  margin-top: 20px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: black;
+  color: white;
+}
+
+.cta-image {
+  margin-left: 20px;
+  width: 400px;
+}

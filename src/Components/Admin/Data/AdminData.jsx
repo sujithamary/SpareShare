@@ -155,3 +155,57 @@ export const barChartBoxDonations = {
         { name: "Sat", donations: 6500 },
     ],
 };
+
+export const userRows = [
+    {
+      id: 1,
+      img: "https://randomuser.me/api/portraits/women/1.jpg",
+      lastName: "Keerthi",
+      firstName: "Anu",
+      email: "anu123@gmail.com",
+      phone: "9876543210",
+    //   createdAt: "05-08-2024",
+      verified: true,
+    },
+    {
+      id: 2,
+      img: "https://randomuser.me/api/portraits/men/2.jpg",
+      lastName: "Sharma",
+      firstName: "Ravi",
+      email: "ravi.sharma@example.com",
+      phone: "9876543220",
+    //   createdAt: "04-08-2024",
+      verified: false,
+    },
+    {
+      id: 3,
+      img: "https://randomuser.me/api/portraits/women/3.jpg",
+      lastName: "Patel",
+      firstName: "Priya",
+      email: "priya.patel@example.com",
+      phone: "9876543230",
+    //   createdAt: "03-08-2024",
+      verified: true,
+    },
+    {
+      id: 4,
+      img: "https://randomuser.me/api/portraits/men/4.jpg",
+      lastName: "Singh",
+      firstName: "Amit",
+      email: "amit.singh@example.com",
+      phone: "9876543240",
+    //   createdAt: "02-08-2024",
+      verified: false,
+    },
+    {
+      id: 5,
+      img: "https://randomuser.me/api/portraits/women/5.jpg",
+      lastName: "Mehta",
+      firstName: "Sunita",
+      email: "sunita.mehta@example.com",
+      phone: "9876543250",
+    //   createdAt: "01-08-2024",
+      verified: true,
+    }
+  ];
+  

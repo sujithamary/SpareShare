@@ -7,7 +7,7 @@ const About = () => {
       <div className="about-container">
         <div className="about-row">
           <div className="about-img">
-            <img src="Asserts/5.jpg" alt="about" />
+            <img src="assets/5.jpg" alt="about" />
           </div>
           <div className="about-col">
             <div className="about-heading">
@@ -19,7 +19,8 @@ const About = () => {
               </p>
               <p>
                 At Spareshare, we are driven by the mission to tackle food waste and hunger simultaneously. By redistributing surplus food efficiently, we address two critical issues: reducing unnecessary food waste and providing reliable food access to those in need. Our approach not only supports vulnerable communities but also fosters a sense of community engagement and generosity. Through the 7 o'clock scheme and our volunteer rewards system, we aim to create a sustainable, impactful solution that brings people together to make a meaningful difference in their lives.
-              </p>
+                <a href='/aboutus' style={{marginLeft: "7px", color: "#135d66", fontWeight: "600"}}>Read more</a>
+              </p>             
             </div>
           </div>
         </div>

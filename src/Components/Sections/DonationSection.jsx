@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom';
 
 const DonationSection = () => {
     const donationItems = [
-        { imgSrc: 'Asserts/shopping-bag.png', altText: 'Food', title: 'Food', description: 'Share the joy of a meal and help nourish those who are truly in need and grateful.', href:'/food' },
-        { imgSrc: 'Asserts/salary.png', altText: 'Fund', title: 'Fund', description: 'Your generous donations can bring hope and support to countless lives.', href:'/fund' },
-        { imgSrc: 'Asserts/clothing.png', altText: 'Clothes', title: 'Clothes', description: 'Share the warmth of your clothes with those who need them the most.', href:'/cloth'},
-        { imgSrc: 'Asserts/sneakers.png', altText: 'Footwear', title: 'Footwear', description: 'Help others walk confidently by donating your gently used footwear.', href:'/footwear'},
-        { imgSrc: 'Asserts/gadgets.png', altText: 'Gadgets', title: 'Gadgets', description: 'Bridge the digital divide by donating gadgets and empowering future potential.', href:'/gadgets' },
-        { imgSrc: 'Asserts/book.png', altText: 'Stationery', title: 'Stationery', description: 'Inspire education and creativity by providing stationery to eager minds.', href:'/stationery' },
+        { imgSrc: 'assets/shopping-bag.png', altText: 'Food', title: 'Food', description: 'Share the joy of a meal and help nourish those who are truly in need and grateful.', href:'/food' },
+        { imgSrc: 'assets/salary.png', altText: 'Fund', title: 'Fund', description: 'Your generous donations can bring hope and support to countless lives.', href:'/fund' },
+        { imgSrc: 'assets/clothing.png', altText: 'Clothes', title: 'Clothes', description: 'Share the warmth of your clothes with those who need them the most.', href:'/cloth'},
+        { imgSrc: 'assets/sneakers.png', altText: 'Footwear', title: 'Footwear', description: 'Help others walk confidently by donating your gently used footwear.', href:'/footwear'},
+        { imgSrc: 'assets/gadgets.png', altText: 'Grocery', title: 'Grocery', description: 'Bridge the gap by donating groceries and empowering futures with nourishment.', href:'/grocery' },
+        { imgSrc: 'assets/book.png', altText: 'Stationery', title: 'Stationery', description: 'Inspire education and creativity by providing stationery to eager minds.', href:'/stationery' },
     ];
 
     return (

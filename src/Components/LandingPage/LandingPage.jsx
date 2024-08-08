@@ -15,9 +15,8 @@ function LandingPage({ isLoggedIn, username }) {
         <HomeSection/>
         <DonationSection/>
         <About/>
-        <Mission/>
         <Contact/>
-        {/* <Getorganized/> */}
+        <Getorganized/>
         <Footer/>
     </div>
   )

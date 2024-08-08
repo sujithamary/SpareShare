@@ -6,6 +6,11 @@
   background-color: #135D66;
 }
 
+.navbar img {
+  width: 30px;
+  height: 30px;
+}
+
 .nav-container {
   width: 100%;
   max-width: 1300px;
@@ -24,6 +29,7 @@
   font-weight: 600;
   color: #fff;
   text-decoration: none;
+  margin-right: 650px;
 }
 
 .navbar-toggler {

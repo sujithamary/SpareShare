@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import './Donate.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser, faPhone, faMapMarkerAlt, faComment } from '@fortawesome/free-solid-svg-icons';
-import { useNavigate } from 'react-router-dom';
-import Footer from '../Sections/Footer';
-import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import '../DonateNow/Donate.css';
+import { Link, useNavigate } from 'react-router-dom';
+import { FaDonate, FaBullhorn, FaHandsHelping, FaTshirt } from 'react-icons/fa';
 
 const Cloth = () => {
   const navigate = useNavigate();
@@ -13,33 +10,7 @@ const Cloth = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  const [username, setUsername] = useState('');
-  const [mobileNumber, setMobileNumber] = useState('');
-  const [pickupLocation, setPickupLocation] = useState('');
-  const [message, setMessage] = useState('');
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleUsernameChange = (event) => setUsername(event.target.value);
-  const handleMobileNumberChange = (event) => setMobileNumber(event.target.value);
-  const handlePickupLocationChange = (event) => setPickupLocation(event.target.value);
-  const handleMessageChange = (event) => setMessage(event.target.value);
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-
-    if (!username || !mobileNumber || !pickupLocation || !message) {
-      alert('Please fill in all fields before submitting.');
-      return;
-    }
-
-    setTimeout(() => {
-      console.log('Form submitted:', { username, mobileNumber, pickupLocation, message });
-      setSubmitted(true);
-    }, 0);
-
-    navigate('/thank-you');
-  };
-
+ 
   const [visibleImages, setVisibleImages] = useState(8);
   const [selectedImage, setSelectedImage] = useState(null);
 
@@ -47,144 +18,126 @@ const Cloth = () => {
   const handleClosePopup = () => setSelectedImage(null);
   const handleLoadMore = () => setVisibleImages((prevVisibleImages) => prevVisibleImages + 4);
 
+  const steps = [
+    {
+      id: 'Donate Clothes',
+      imgSrc: <FaDonate size={80} />, 
+      description: 'Clear out your closet and give a second life to your clothing. Every piece can make a difference.',
+    },
+    {
+      id: 'Spread the Word',
+      imgSrc: <FaBullhorn size={80} />, 
+      description: 'Encourage friends and family to contribute their gently-used clothes. Their support can make a big difference!',
+    },
+    {
+      id: 'Volunteer',
+      imgSrc: <FaHandsHelping size={80} />, 
+      description: 'Join our team of dedicated volunteers to help with sorting, packing, and distributing donations.',
+    },
+  ];
+
   const images = [
-    'Asserts/c-1.jpeg',
-    'Asserts/c-2.jpg',
-    'Asserts/c-3.jpg',
-    'Asserts/c-4.webp',
-    'Asserts/c-5.jpg',
-    'Asserts/c-6.jpeg',
-    'Asserts/c-7.jpg',
-    'Asserts/c-8.jpg',
-    'Asserts/c-9.jpg',
-    'Asserts/c-10.jpg',
-    'Asserts/c-11.webp',
-    'Asserts/c-12.jpg',
+    'assets/c-1.jpeg',
+    'assets/c-2.jpg',
+    'assets/c-3.jpg',
+    'assets/c-4.webp',
+    'assets/c-5.jpg',
+    'assets/c-6.jpeg',
+    'assets/c-7.jpg',
+    'assets/c-8.jpg',
+    'assets/c-9.jpg',
+    'assets/c-10.jpg',
+    'assets/c-11.webp',
+    'assets/c-12.jpg',
   ];
 
   return (
-    <div>
+    <div className="cloth-container">
       <button
         onClick={() => navigate(-1)}
-        style={{
-          background: 'transparent',
-          border: 'none',
-          cursor: 'pointer',
-        }}
+        className="back-button"
       >
-        <ArrowBackIcon />
+        &larr; Back
       </button>
-      <section className="mission" id="mission-id">
-        <div className="container">
-          <div className="heading">
-            <h2>Spareshare Cloth Donation Initiative</h2>
-            <p><span>Join us in making a difference!</span></p>
-            <p>At Spareshare, we believe that everyone deserves to have their basic needs met.
-              Our cloth donation initiative is dedicated to providing those in need with clean,
-              gently-used clothing. By donating your pre-loved clothes, you can help bring warmth,
-              dignity, and comfort to individuals and families facing difficult times.</p>
-            <p><span>How You Can Help:</span></p>
-            <ul>
-              <li><span>Donate Clothes:</span> Clear out your closet and give a second life to your clothing. Every piece can make a difference.</li>
-              <li><span>Spread the Word:</span> Encourage friends and family to contribute to the cause.</li>
-              <li><span>Volunteer:</span> Join our team of dedicated volunteers to help with sorting, packing, and distributing donations.</li>
-            </ul>
-            <p>Together, we can turn your unused garments into valuable resources for those in need. Every donation counts, and your generosity can make a significant impact in someone's life.</p>
+      <section className="donation-initiative">
+        <div className="header-section">
+          <div className="header-content">            
+            <h2 className="title"><span><FaTshirt  /></span>SpareShare Cloth Donation Initiative</h2>
+            <p className="subtitle">Join Us in Making a Difference!</p>
+          </div>
+          <p className="content">
+            At SpareShare, we are committed to creating a world where everyone’s basic needs are met. Our cloth donation initiative shines as a beacon of hope for those in need, offering clean, gently-used clothing to individuals and families facing challenging times. By donating your pre-loved clothes, you play a crucial role in transforming lives.
+          </p>
+          <p className="additional-info">
+            Your generosity provides warmth during cold nights, boosts self-esteem, and ensures that everyone has access to essentials. Each donation not only meets a basic need but also restores dignity and brings comfort to those who might otherwise go without. Together, we can make a tangible impact, one garment at a time, and build a more compassionate and supportive community for all.
+          </p>
+          <p className="additional-info">
+          Every piece of clothing donated is more than just a garment; it's a symbol of care and solidarity. Your contribution helps bridge the gap between those with excess and those in need, fostering a sense of unity and support within our community. By participating in our cloth donation initiative, you are not only providing essential items but also inspiring others to take action and join the movement. Together, we create a ripple effect of kindness that extends beyond our immediate circle, touching lives and making a significant difference in the lives of countless individuals. Let’s come together to make our community a better place, one donation at a time.
+        </p>
+          <div className='header-img'>
+            <img src='assets/clothVector.png'></img>
           </div>
         </div>
-        <div className="gallery-sec">
-          <div className="container">
-            <div className='heading'>
-              <h2>Spreading Smiles Through Cloth Donations</h2>
-              <p>Our dedicated volunteers bring warmth and comfort to those in need, distributing clean, gently-used clothing. Each donation brings joy and dignity, showcasing the powerful impact of community generosity.</p>
+        <h3 className="section-title">How You Can Help</h3>
+        <div className="steps-container">
+          {steps.map((step) => (
+            <div className="step-card" key={step.id}>
+              <div className="icon-container">
+                {step.imgSrc}
+              </div>
+              <div className="step-title">{step.id}</div>
+              <div className="step-description">{step.description}</div>
             </div>
-            <div className="image-container">
-              {images.slice(0, visibleImages).map((image, index) => (
-                <div className="image" key={index} onClick={() => handleImageClick(image)}>
-                  <img src={image} alt={`gallery-img-${index}`} />
-                </div>
-              ))}
-              {visibleImages < images.length && (
-                <div className="load-more" onClick={handleLoadMore}>
-                  <span>+ Load More</span>
-                </div>
-              )}
-            </div>
+          ))}
+        </div>
+        <div className="gallery-section">
+          <div className="gallery-header">
+            <h2 className="gallery-title">Spreading Smiles Through Cloth Donations</h2>
+            <p>
+              Our dedicated volunteers bring warmth and comfort to those in need, distributing clean, gently-used clothing. Each donation brings joy and dignity, showcasing the powerful impact of community generosity.
+            </p>
+            <p>
+            The efforts of our volunteers extend far beyond the immediate act of distributing clothing. They embody compassion and commitment, transforming each donation into a beacon of hope and a tangible source of support for those who need it most. Through their hard work and dedication, they help create a network of care that strengthens the fabric of our community. Every piece of clothing donated, and every hour volunteered, contributes to a larger mission of building a supportive and empathetic society. By joining forces, we can amplify our impact, ensuring that every donation finds its way to someone who truly needs it and fostering a culture of generosity and mutual aid.
+          </p>
+
           </div>
-          {selectedImage && (
-            <div className="pop-image">
-              <span onClick={handleClosePopup}>&times;</span>
-              <img src={selectedImage} alt="gallery-img" />
-            </div>
-          )}
+          <div className="image-gallery">
+            {images.slice(0, visibleImages).map((image, index) => (
+              <div className="gallery-item" key={index} onClick={() => handleImageClick(image)}>
+                <img src={image} alt={`gallery-img-${index}`} />
+              </div>
+            ))}
+            {visibleImages < images.length && (
+              <div className="load-more" onClick={handleLoadMore}>
+                <span>+ Load More</span>
+              </div>
+            )}
+          </div>
         </div>
       </section>
-      <div className='container'>
-        <div className='heading'>
-          <h2>Donate Now and Be a Part of the Change!</h2>
-          <p>Thank you for your support in helping us build a more compassionate and caring community.</p>
+      {selectedImage && (
+        <div className="popup-image">
+          <span onClick={handleClosePopup} className="close-button">&times;</span>
+          <img src={selectedImage} alt="Selected" />
         </div>
-      </div>
-      <div className="f-wrapper">
-        <div className="feedback-forme">
-          <h2 className="fee">Donation Form</h2>
-          <form onSubmit={handleSubmit} className="ffform">
-            <label htmlFor="username" className="lab">
-              <FontAwesomeIcon icon={faUser} /> Username
-            </label>
-            <input
-              className="int"
-              type="text"
-              id="username"
-              name="username"
-              value={username}
-              onChange={handleUsernameChange}
-              placeholder="Enter your username"
-            />
-
-            <label htmlFor="mobileNumber" className="lab">
-              <FontAwesomeIcon icon={faPhone} /> Mobile Number
-            </label>
-            <input
-              className="int"
-              type="text"
-              id="mobileNumber"
-              name="mobileNumber"
-              value={mobileNumber}
-              onChange={handleMobileNumberChange}
-              placeholder="Enter your mobile number"
-            />
-
-            <label htmlFor="pickupLocation" className="lab">
-              <FontAwesomeIcon icon={faMapMarkerAlt} /> Pickup Location
-            </label>
-            <input
-              className="int"
-              type="text"
-              id="pickupLocation"
-              name="pickupLocation"
-              value={pickupLocation}
-              onChange={handlePickupLocationChange}
-              placeholder="Enter the pickup location"
-            />
-
-            <label htmlFor="message" className="lab">
-              <FontAwesomeIcon icon={faComment} /> Message
-            </label>
-            <textarea
-              className="int"
-              id="message"
-              name="message"
-              value={message}
-              onChange={handleMessageChange}
-              placeholder="Type your message here..."
-            ></textarea>
-
-            <button type="submit" className="sub">Submit</button>
-          </form>
+      )}
+      <div className="donation-call-to-action">
+        <div className="cta-content">
+          <h1>
+          <span className="cta-subtitle">
+          Your generous contribution awaits, 
+          <span className="cta-subtitle"> ready to make a real difference in someone's life.</span>
+          <br/>
+          <span className="cta-subtitle">
+            Every donation helps us provide essential clothing to those in need, transforming lives and spreading warmth. <br />
+            Join us in our mission to build a more compassionate world—one garment at a time.
+          </span>
+        </span>
+          </h1>
+          <Link to="/donationform"><button className="cta-button">Donate Now</button></Link>
         </div>
+        <img src="assets/img-2.jpeg" alt="Donation" className="cta-image" />
       </div>
-      <Footer />
     </div>
   );
 };

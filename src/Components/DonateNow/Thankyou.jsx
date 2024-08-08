@@ -24,6 +24,9 @@ const ThankYouPage = () => {
 
   return (
     <div className="thank-you-container">
+      <div className='thank-you-img'>
+        <img src='assets/img-1.png'/>
+      </div>
       <div className="thank-you-card">
         <h2>Thank you for your donation!</h2>
         <p>Your generosity is helping us make a difference in the community.</p>

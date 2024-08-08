@@ -37,16 +37,16 @@ const FeedbackForm = () => {
 
   return (
     <div>
-        <div class = "f-wrapper">
-        <div class="feedback1">
-            <div className="feedback-forme">
-            <h2 class="fee">Feedback Form</h2>
+        <div class = "feedback-wrapper">
+        <div class="feedback-container">
+            <div className="feedback-form">
+            <h2 class="feedback-heading">Feedback Form</h2>
             {submitted ? (
                 <p className="success-messagee">Thank you for your feedback!!</p>
             ) : (
-                <form onSubmit={handleSubmit} class="ffform">
+                <form onSubmit={handleSubmit} class="feedbackform">
                 <label htmlFor="username" class="lab">Username:</label>
-                <input class="int"
+                <input class="feedback-input"
                     type="text"
                     id="username"
                     name="username"
@@ -54,8 +54,8 @@ const FeedbackForm = () => {
                     placeholder="Enter your name"
                     />
 
-                <label htmlFor="feedback">Your Feedback:</label>
-                <textarea class="int"
+                <label htmlFor="feedback" class= "lab">Your Feedback:</label>
+                <textarea class="feedback-input"
                     id="feedback"
                     name="feedback"
                     value={feedback}
