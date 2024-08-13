@@ -10,8 +10,8 @@ const HomeSection = () => {
                         <div className="home-col-50 align-item-center">
                             <div className="home-info">
                                 <h1>Alone we can do little, together we can do so much</h1>
-                                <h2>We <span>SpareShare</span> managing excess for needy peoples</h2>
-                                <p>SpareShare is dedicated to efficiently managing excess food to support those in need. By connecting donors with NGOs and volunteers through a seamless and integrated platform, SpareShare ensures that surplus food is redistributed to the hungry instead of being wasted. Our mission is to streamline the donation process, provide real-time tracking, and offer incentives to encourage contributions, creating a sustainable and impactful solution for food insecurity.</p>
+                                <h2>We <span>SurplusShare</span> managing excess for needy peoples</h2>
+                                <p>SurplusShare is dedicated to efficiently managing excess food to support those in need. By connecting donors with NGOs and volunteers through a seamless and integrated platform, SurplusShare ensures that surplus food is redistributed to the hungry instead of being wasted. Our mission is to streamline the donation process, provide real-time tracking, and offer incentives to encourage contributions, creating a sustainable and impactful solution for food insecurity.</p>
                                 <div className="buttons">
                                     <a href="/donation" className="home-btn">Donate Now</a>
                                 </div>

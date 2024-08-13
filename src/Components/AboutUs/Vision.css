@@ -39,8 +39,9 @@
   }
     
   .vision-image {
-    max-width: 400px;
+    max-width: 600px;
     height: auto;
+    width: auto;
     margin-left: 40px;
   }
   

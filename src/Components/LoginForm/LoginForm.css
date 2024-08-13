@@ -1,7 +1,8 @@
 .body {
     position: relative;
     margin: 0;
-    width: 1518px;
+    max-width: 100%;
+    height: auto;
     font-family: 'Poppins', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -9,13 +10,14 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: url('https://i.pinimg.com/originals/36/55/28/3655283e352dee3ed14712a5b2aea6da.jpg') no-repeat ;
+    background-color: #135d66;
+    /* background: url('https://img.freepik.com/free-vector/people-carrying-donation-charity-related-icons_53876-43091.jpg?t=st=1723538837~exp=1723542437~hmac=a91f9590752291ba72d5f3ba0609fe42c23976f595819efea72cb3b5073fa467&w=996') no-repeat ; */
     background-repeat: no-repeat;
     background-size: cover;
 }
 .wrapper {
     width: 420px;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.5);
     border: 3px solid rgba(255, 255, 255, 0.2);
     color: #ffffff;
     border-radius: 10px;

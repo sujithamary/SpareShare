@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import './AboutUs.css';
-import { blue } from '@mui/material/colors';
 
 const AboutUs = () => {
   useEffect(() => {
@@ -22,7 +21,7 @@ const AboutUs = () => {
           </ul>
         </div>
         <div>
-          <img src="" alt="About SpareShare" className="about-main-img" />
+          <img src="assets/aboutus2.jpg" alt="About SpareShare" className="about-main-img" />
         </div>
       </div>
     </div>

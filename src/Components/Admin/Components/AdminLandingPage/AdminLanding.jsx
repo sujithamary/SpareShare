@@ -5,7 +5,6 @@ import AdminNavbar from '../AdminNavbar/AdminNavbar';
 import AdminMenu from '../AdminMenu/AdminMenu';
 import { Outlet } from 'react-router-dom';
 import './AdminLanding.css';
-import AdminHome from '../AdminHome/AdminHome';
 
 const AdminLanding = () => {
   return (

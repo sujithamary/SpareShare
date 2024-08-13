@@ -2,8 +2,8 @@ import React from 'react';
 import Vision from './Vision';
 import AboutUs from './AboutUs';
 import WhyChooseUs from './WhyChooseUs';
-import FAQ from '../FAQ/FAQ';
 import Mission from '../Sections/MissionSection';
+import FAQ from './FAQ/FAQ';
 
 const AboutUsLandingPage = () => {
   return (

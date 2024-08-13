@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../DonateNow/Donate.css';
 import { Link, useNavigate } from 'react-router-dom';
+import { IoFastFood } from "react-icons/io5";
 import { FaDonate, FaBullhorn, FaHandsHelping, FaAppleAlt } from 'react-icons/fa';
 
 const Food = () => {
@@ -61,7 +62,7 @@ const Food = () => {
       <section className="donation-initiative">
         <div className="header-section">
           <div className="header-content">
-            <h2 className="title"><span><FaAppleAlt /></span>SpareShare Food Donation Initiative</h2>
+            <h2 className="title"><span><IoFastFood /></span>SpareShare Food Donation Initiative</h2>
             <p className="subtitle">Join Us in Nourishing Lives!</p>
           </div>
           <p className="content">

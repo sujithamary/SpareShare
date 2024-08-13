@@ -1,10 +1,8 @@
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faPhone, faImage } from '@fortawesome/free-solid-svg-icons';
-import axios from 'axios'; 
 import '../DonationForm/DonationFormMain.css';
 import { useNavigate } from "react-router-dom";
-import Footer from '../Sections/Footer';
 
 function DonationForm() {
   const navigate = useNavigate();
@@ -40,37 +38,14 @@ function DonationForm() {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
+    e.preventDefault();  
     
-    // const formData = new FormData();
-    // formData.append('categoryType', categoryType);
-    // formData.append('totalQuantity', totalQuantity);
-    // formData.append('fundAmount', fundAmount);
-    // formData.append('paymentType', paymentType);
-
-    // items.forEach((item, index) => {
-    //   formData.append(`items[${index}].name`, item.name);
-    //   formData.append(`items[${index}].quantity`, item.quantity);
-    // });
-
-    // imageFiles.forEach((file) => {
-    //   formData.append('images', file);
-    // });
-
-    // try {
-    //   await axios.post('http://localhost:8080/donations', formData, {
-    //     headers: {
-    //       'Content-Type': 'multipart/form-data',
-    //     },
-    //   });
       navigate('/thank-you');
-    // } catch (error) {
-    //   console.error('Error submitting donation:', error);
-    // }
+    
   };
 
   return (
-    <div>
+    <div className='donation-form-main-container'>
       <div className="donation-form-wrapper">
         <div className="donation-form-container">
           <h2 className="form-title">Donation Form</h2>
@@ -411,13 +386,18 @@ function DonationForm() {
             )}
 
             <div className="form-navigation">
-              {activeTab !== 'personal' && (
+            {activeTab !== 'personal' && (
                 <button type="button" onClick={() => setActiveTab('personal')} className="prev-btn">
                   Back
                 </button>
               )}
-              {activeTab !== 'address' && (
+              {activeTab === 'personal' && (
                 <button type="button" onClick={() => setActiveTab('category')} className="next-btn">
+                  Next
+                </button>
+              )}
+              {activeTab === 'category' && (
+                <button type="button" onClick={() => setActiveTab('address')} className="next-btn">
                   Next
                 </button>
               )}

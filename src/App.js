@@ -10,7 +10,6 @@ import ContactSection from './Components/Sections/ContactSection';
 import Footer from './Components/Sections/Footer';
 import FeedbackForm from './Components/FeedBack/FeedBack';
 import Payment from './Components/Sections/Payment';
-import LandingPage from './Components/LandingPage/LandingPage';
 import Cloth from './Components/DonateNow/Cloth';
 import ThankYouPage from './Components/DonateNow/Thankyou';
 import Food from './Components/DonateNow/Food';
@@ -22,10 +21,15 @@ import AdminHome from './Components/Admin/Components/AdminHome/AdminHome';
 import ManageProducts from './Components/Admin/Components/ManageProducts/ManageProducts';
 import ManageUsers from './Components/Admin/Components/ManageUsers/ManageUsers';
 import AdminLanding from './Components/Admin/Components/AdminLandingPage/AdminLanding';
-import DonationFormMain from './Components/DonationForm/DonationFormMain';
 import AboutUsLandingPage from './Components/AboutUs/AboutUsLandingPage';
 import Grocery from './Components/DonateNow/Grocery';
 import DonationForm from './Components/DonationForm/DonationFormMain';
+import LandingPage from './Components/User/LandingPage/LandingPage';
+import AdminDonation from './Components/Admin/Components/AdminDonationHandling/AdminDonation';
+import DonationList from './Components/Admin/Components/AdminDonationHandling/DonationList';
+import VolunteerNavbar from './Components/Volunteers/VolunteerNavbar/VolunteerNavbar';
+import VolunteerDonationHandling from './Components/Volunteers/VolunteerDonationHandling/VolunteerDonationHandling';
+import VolunteerRegistrationForm from './Components/Volunteers/VolunteerRegistration/VolunteerRegister';
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -42,7 +46,7 @@ function App() {
         <Routes>
           <Route 
             path="/" 
-            element={<LandingPage isLoggedIn={isLoggedIn} username={username} />} 
+            element={<LandingPage/>} 
           />
           <Route 
             path="/LoginForm" 
@@ -69,9 +73,14 @@ function App() {
             <Route path="aHome" element={<AdminHome/>} />
             <Route path="aProducts" element={<ManageProducts/>} />
             <Route path="aUsers" element={<ManageUsers/>} />
+            <Route path="aDonations" element={<AdminDonation/>} />
           </Route> 
+          <Route path="/aDonationList" element={<DonationList/>} />
           <Route path='/aboutus' element={<AboutUsLandingPage/>} />
           <Route path="/donationform" element={<DonationForm/>}/>
+          <Route path='/vNavbar' element = {<VolunteerNavbar/>} />
+          <Route path='/vDonationHandling' element= {<VolunteerDonationHandling/>} />
+          <Route path='/vRegister' element = {<VolunteerRegistrationForm/>} />
         </Routes>
       </div>
     </Router>

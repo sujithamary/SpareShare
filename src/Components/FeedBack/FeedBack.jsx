@@ -36,7 +36,7 @@ const FeedbackForm = () => {
   };
 
   return (
-    <div>
+    <div className='feedback-main-container'>
         <div class = "feedback-wrapper">
         <div class="feedback-container">
             <div className="feedback-form">

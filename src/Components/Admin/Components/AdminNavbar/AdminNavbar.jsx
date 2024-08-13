@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { MdAdminPanelSettings, MdMessage } from 'react-icons/md';
 import { CgProfile } from 'react-icons/cg';
-import SideMenu from './SideMenu'; // Adjust the path as needed
+import SideMenu from '../../../Volunteers/VolunteerNavbar/SideMenu'; 
 import "../AdminNavbar/AdminNavbar.css";
 
 const AdminNavbar = () => {

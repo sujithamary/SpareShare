@@ -18,8 +18,8 @@ function Navbar({ isLoggedIn, username }) {
     <header className="fixed-top">
       <div className="nav-container">
         <nav className="navbar">
-          <img src='assets/surplus-logo.png' />
-          <a className="navbar-brand" href="/">SpareShare</a>
+          {/* <img src='assets/surplus-logo.png' /> */}
+          <a className="navbar-brand" href="/">SurplusShare</a>
           <button className="navbar-toggler" type="button">
             <span className="navbar-toggler-icon"></span>
           </button>

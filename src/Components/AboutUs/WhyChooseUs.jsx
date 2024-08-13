@@ -1,6 +1,7 @@
 import React from "react";
 import { FaHandHoldingHeart, FaHandsHelping, FaLeaf } from "react-icons/fa";
 import "./WhyChooseUs.css";
+import { Link } from "react-router-dom";
 
 const WhyChooseUs = () => {
   return (
@@ -54,7 +55,9 @@ const WhyChooseUs = () => {
           <p className="description-text">
             We prioritize transparency and efficiency in donation management, ensuring that every contribution makes a significant impact. Whether you're donating surplus food or volunteering your time, your efforts are crucial to our mission of making sure no food goes to waste.
           </p>
+          <Link to = "/donation">
           <button className="cta-buttonss">Get Involved</button>
+          </Link>
         </div>
       </div>
     </section>

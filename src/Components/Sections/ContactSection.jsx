@@ -29,16 +29,7 @@ const Contact = () => {
     <section className="contact-section" id="contact">
       <div className="contact-container">
         <div className="contact-info">
-          <h2>How To Reach Us</h2>
-          <div className="info-item">
-            <div className="icon-box">
-              <FaMapMarkerAlt className="info-icon" />
-            </div>
-            <div>
-              <h3>Our Location</h3>
-              <p>No.6, Dhanammal street, Spur tank road, Chetpet, Chennai 600-031</p>
-            </div>
-          </div>
+          <h2>How To Reach Us</h2>          
           <div className="info-item">
             <div className="icon-box">
               <FaPhone className="info-icon" />

@@ -18,7 +18,7 @@ const LoginModal = ({ onClose }) => {
         <span className="close" onClick={onClose}>&times;</span>
         <h2>Select Login Type</h2>
         <div className="login-options">
-          <div className="login-option" onClick={() => navigateTo('/admin')}>
+          <div className="login-option" onClick={() => navigateTo('/LoginForm')}>
             <FontAwesomeIcon icon={faUserShield} size="3x"style={{color: "#135d66"}} />
             <p style={{fontSize: "17px", fontWeight: "600"}}>Admin</p>
           </div>

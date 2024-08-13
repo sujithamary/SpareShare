@@ -2,9 +2,9 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { CgProfile } from 'react-icons/cg';
 import { IoHome, IoBarChartSharp } from 'react-icons/io5';
-import { FaUser, FaUserTie, FaDonate, FaCalendar } from 'react-icons/fa';
-import { MdPostAdd, MdEditNote, MdBackup } from 'react-icons/md';
-import { IoMdSettings, IoLogoBuffer } from 'react-icons/io';
+import { FaUser, FaUserTie, FaDonate } from 'react-icons/fa';
+import { MdPostAdd } from 'react-icons/md';
+import { IoLogoBuffer } from 'react-icons/io';
 import '../AdminMenu/AdminMenu.css';
 
 const AdminMenu = () => {

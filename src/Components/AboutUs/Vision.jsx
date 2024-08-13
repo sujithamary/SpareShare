@@ -19,11 +19,11 @@ We also support volunteers and NGOs with essential services like food delivery a
 
 Join us in transforming surplus into support and making a meaningful impact on those in need. Every contribution helps create a more equitable and compassionate world.
         </h2>
-        <Link to="/GetInvolved">
+        <Link to="/donation">
           <button className="vision-button">Join us in making a difference</button>
         </Link>
       </div>
-      <img src="" alt="SpareShare Vision" className='vision-image' />
+      <img src="assets/aboutus1.png" alt="SpareShare Vision" className='vision-image' />
     </div>
   );
 };

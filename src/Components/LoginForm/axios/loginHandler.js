@@ -8,9 +8,10 @@ export const loginHandler = async (email, password) => {
       });
   
       if (response.status === 200) {
-        localStorage.setItem('UserData', JSON.stringify(response.data));
+        const userData = response.data;
+        localStorage.setItem('UserData', JSON.stringify(userData));
         console.log('success')
-       return true
+        return true;
       } 
       else {
         console.log(response.data);

@@ -8,7 +8,7 @@ const DonationSection = () => {
         { imgSrc: 'assets/salary.png', altText: 'Fund', title: 'Fund', description: 'Your generous donations can bring hope and support to countless lives.', href:'/fund' },
         { imgSrc: 'assets/clothing.png', altText: 'Clothes', title: 'Clothes', description: 'Share the warmth of your clothes with those who need them the most.', href:'/cloth'},
         { imgSrc: 'assets/sneakers.png', altText: 'Footwear', title: 'Footwear', description: 'Help others walk confidently by donating your gently used footwear.', href:'/footwear'},
-        { imgSrc: 'assets/gadgets.png', altText: 'Grocery', title: 'Grocery', description: 'Bridge the gap by donating groceries and empowering futures with nourishment.', href:'/grocery' },
+        { imgSrc: 'assets/groceries.png', altText: 'Grocery', title: 'Grocery', description: 'Bridge the gap by donating groceries and empowering futures with nourishment.', href:'/grocery' },
         { imgSrc: 'assets/book.png', altText: 'Stationery', title: 'Stationery', description: 'Inspire education and creativity by providing stationery to eager minds.', href:'/stationery' },
     ];
 
