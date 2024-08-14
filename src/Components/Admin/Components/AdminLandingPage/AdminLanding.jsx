@@ -1,4 +1,3 @@
-// AdminLanding.js
 import React from 'react';
 import AdminFooter from '../AdminFooter/AdminFooter';
 import AdminNavbar from '../AdminNavbar/AdminNavbar';
