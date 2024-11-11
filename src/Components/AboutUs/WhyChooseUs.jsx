@@ -45,12 +45,12 @@ const WhyChooseUs = () => {
           </div>
         </div>
         <div className="descriptionss">
-          <h2>Why Choose <span>SpareShare?</span></h2>
+          <h2>Why Choose <span>SurplusShare?</span></h2>
           <p className="description-text">
-            SpareShare connects surplus food from events and individuals to those in need, ensuring no food goes to waste. Our platform facilitates efficient food distribution through a robust network of NGOs and volunteers.
+            SurplusShare connects surplus food from events and individuals to those in need, ensuring no food goes to waste. Our platform facilitates efficient food distribution through a robust network of NGOs and volunteers.
           </p>
           <p className="description-text">
-            By joining SpareShare, you contribute to reducing food waste, supporting local communities, and promoting environmental sustainability. Our user-friendly platform makes it easy to donate food, volunteer, or request assistance.
+            By joining SurplusShare, you contribute to reducing food waste, supporting local communities, and promoting environmental sustainability. Our user-friendly platform makes it easy to donate food, volunteer, or request assistance.
           </p>
           <p className="description-text">
             We prioritize transparency and efficiency in donation management, ensuring that every contribution makes a significant impact. Whether you're donating surplus food or volunteering your time, your efforts are crucial to our mission of making sure no food goes to waste.

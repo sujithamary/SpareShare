@@ -61,11 +61,11 @@ const Grocery = () => {
       <section className="donation-initiative">
         <div className="header-section">
           <div className="header-content">
-            <h2 className="title"><span><FaAppleAlt /></span>SpareShare Grocery Donation Initiative</h2>
+            <h2 className="title"><span><FaAppleAlt /></span>SurplusShare Grocery Donation Initiative</h2>
             <p className="subtitle">Join Us in Making a Difference!</p>
           </div>
           <p className="content">
-            At SpareShare, we are dedicated to providing essential groceries to those in need. Our grocery donation initiative ensures that families and individuals facing food insecurity have access to nutritious food. By donating non-perishable groceries, you help us make a significant difference in the lives of those who need it most.
+            At SurplusShare, we are dedicated to providing essential groceries to those in need. Our grocery donation initiative ensures that families and individuals facing food insecurity have access to nutritious food. By donating non-perishable groceries, you help us make a significant difference in the lives of those who need it most.
           </p>
           <p className="additional-info">
             Your generosity helps provide vital food items, ensuring that everyone has access to nutritious meals. Each donation meets a basic need and brings comfort to those who might otherwise go without. Together, we can make a tangible impact, one grocery item at a time, and build a more compassionate and supportive community for all.

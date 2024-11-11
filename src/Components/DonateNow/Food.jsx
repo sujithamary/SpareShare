@@ -62,11 +62,11 @@ const Food = () => {
       <section className="donation-initiative">
         <div className="header-section">
           <div className="header-content">
-            <h2 className="title"><span><IoFastFood /></span>SpareShare Food Donation Initiative</h2>
+            <h2 className="title"><span><IoFastFood /></span>SurplusShare Food Donation Initiative</h2>
             <p className="subtitle">Join Us in Nourishing Lives!</p>
           </div>
           <p className="content">
-            At SpareShare, we are committed to addressing food insecurity and providing nourishing meals to those in need. Our food donation initiative shines as a beacon of hope, offering essential food items to individuals and families facing challenging times. By donating non-perishable food, you play a crucial role in feeding those who need it most.
+            At SurplusShare, we are committed to addressing food insecurity and providing nourishing meals to those in need. Our food donation initiative shines as a beacon of hope, offering essential food items to individuals and families facing challenging times. By donating non-perishable food, you play a crucial role in feeding those who need it most.
           </p>
           <p className="additional-info">
             Your generosity helps ensure that everyone has access to nutritious meals, boosts well-being, and supports families in need. Each donation not only meets a basic need but also brings comfort and dignity to those who might otherwise go without. Together, we can make a tangible impact, one meal at a time, and build a more compassionate and supportive community for all.

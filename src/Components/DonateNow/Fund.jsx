@@ -61,11 +61,11 @@ const Fund = () => {
       <section className="donation-initiative">
         <div className="header-section">
           <div className="header-content">
-            <h2 className="title"><span><FaDollarSign /></span>SpareShare FundRaising Initiative</h2>
+            <h2 className="title"><span><FaDollarSign /></span>SurplusShare FundRaising Initiative</h2>
             <p className="subtitle">Join Us in Making a Financial Impact!</p>
           </div>
           <p className="content">
-            At SpareShare, we are dedicated to raising funds to support our various initiatives and programs. Our fundraising initiative shines as a beacon of hope, enabling us to provide essential services and resources to those in need. By contributing financially, you play a crucial role in helping us achieve our goals and make a significant impact in our community.
+            At SurplusShare, we are dedicated to raising funds to support our various initiatives and programs. Our fundraising initiative shines as a beacon of hope, enabling us to provide essential services and resources to those in need. By contributing financially, you play a crucial role in helping us achieve our goals and make a significant impact in our community.
           </p>
           <p className="additional-info">
             Your generosity helps fund essential programs, support community projects, and provide resources to those who need it most. Each donation not only supports our mission but also enables us to expand our reach and enhance our efforts. Together, we can make a tangible impact, one contribution at a time, and build a more compassionate and supportive community for all.

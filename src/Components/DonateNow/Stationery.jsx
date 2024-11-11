@@ -61,11 +61,11 @@ const Stationery = () => {
       <section className="donation-initiative">
         <div className="header-section">
           <div className="header-content">
-            <h2 className="title"><span><FaPen /></span>SpareShare Stationery Donation Initiative</h2>
+            <h2 className="title"><span><FaPen /></span>SurplusShare Stationery Donation Initiative</h2>
             <p className="subtitle">Join Us in Making a Difference!</p>
           </div>
           <p className="content">
-            At SpareShare, we are dedicated to providing essential stationery supplies to those in need. Our stationery donation initiative ensures that students, teachers, and community organizations have access to the tools they need to succeed. By donating unused stationery items, you help us make a significant impact on education and community development.
+            At SurplusShare, we are dedicated to providing essential stationery supplies to those in need. Our stationery donation initiative ensures that students, teachers, and community organizations have access to the tools they need to succeed. By donating unused stationery items, you help us make a significant impact on education and community development.
           </p>
           <p className="additional-info">
             Your generosity helps provide vital stationery items, ensuring that everyone has access to the resources they need. Each donation meets a basic need and brings support to those who might otherwise go without. Together, we can make a tangible impact, one stationery item at a time, and build a more supportive and resourceful community for all.

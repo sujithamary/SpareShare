@@ -10,7 +10,7 @@ const AboutUs = () => {
     <div id="about-main">
       <div className="about-us-main">
         <div className="content-main">
-          <h2>SpareShare's Vision - We Connect and Share</h2>
+          <h2>SurplusShare's Vision - We Connect and Share</h2>
           <ul>
             <li><span className="checkmark">✔</span> Bridging the gap between surplus food and those in need</li>
             <li><span className="checkmark">✔</span> Empowering communities through volunteerism</li>
@@ -21,7 +21,7 @@ const AboutUs = () => {
           </ul>
         </div>
         <div>
-          <img src="assets/aboutus2.jpg" alt="About SpareShare" className="about-main-img" />
+          <img src="assets/aboutus2.jpg" alt="About SurplusShare" className="about-main-img" />
         </div>
       </div>
     </div>

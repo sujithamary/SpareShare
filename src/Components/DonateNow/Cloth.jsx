@@ -62,11 +62,11 @@ const Cloth = () => {
       <section className="donation-initiative">
         <div className="header-section">
           <div className="header-content">            
-            <h2 className="title"><span><FaTshirt  /></span>SpareShare Cloth Donation Initiative</h2>
+            <h2 className="title"><span><FaTshirt  /></span>SurplusShare Cloth Donation Initiative</h2>
             <p className="subtitle">Join Us in Making a Difference!</p>
           </div>
           <p className="content">
-            At SpareShare, we are committed to creating a world where everyone’s basic needs are met. Our cloth donation initiative shines as a beacon of hope for those in need, offering clean, gently-used clothing to individuals and families facing challenging times. By donating your pre-loved clothes, you play a crucial role in transforming lives.
+            At SurplusShare, we are committed to creating a world where everyone’s basic needs are met. Our cloth donation initiative shines as a beacon of hope for those in need, offering clean, gently-used clothing to individuals and families facing challenging times. By donating your pre-loved clothes, you play a crucial role in transforming lives.
           </p>
           <p className="additional-info">
             Your generosity provides warmth during cold nights, boosts self-esteem, and ensures that everyone has access to essentials. Each donation not only meets a basic need but also restores dignity and brings comfort to those who might otherwise go without. Together, we can make a tangible impact, one garment at a time, and build a more compassionate and supportive community for all.

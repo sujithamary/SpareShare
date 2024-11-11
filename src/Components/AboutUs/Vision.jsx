@@ -8,10 +8,10 @@ const Vision = () => {
       <div className="vision-content">
         <h1>Get To Know Us</h1>
         <h1 className="vision-title">
-          About SpareShare
+          About SurplusShare
         </h1>
         <h2 className="vision-subtitle">
-        At SpareShare, our mission is to bridge the gap between surplus food and those who need it most.
+        At SurplusShare, our mission is to bridge the gap between surplus food and those who need it most.
 
 We facilitate the donation of surplus food from event organizers, restaurants, and individuals to underserved communities. Our innovative 7 O'Clock Scheme ensures that meals are distributed consistently every day at 7 PM, providing reliable support for those facing food insecurity.
 

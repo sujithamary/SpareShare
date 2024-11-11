@@ -12,7 +12,7 @@ const Mission = () => {
       <section className="mission">
         <div className="mission-container">
           <div className="mission-heading">
-            <h2>SpareShare's Missions</h2>
+            <h2>SurplusShare's Missions</h2>
             <p>We have distributed <span>excess food</span> and <span>generous donations</span> to individuals in need.</p>
           </div>
           <div className="main-mission">

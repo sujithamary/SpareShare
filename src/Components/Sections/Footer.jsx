@@ -30,7 +30,7 @@ const Footer = () => {
               <h4>
                 <strong>
                   <span className="logo"></span>
-                  <span className="c">SpareShare</span>
+                  <span className="c">SurplusShare</span>
                 </strong>
               </h4>
               <ul>
@@ -98,7 +98,7 @@ const Footer = () => {
                   <a href="#">Cookie Policy</a>
                 </li>
                 <li>
-                  <a href="mailto:contact@spareshare.org">Email Us</a>
+                  <a href="mailto:contact@SurplusShare.org">Email Us</a>
                 </li>
               </ul>
             </div>

@@ -61,11 +61,11 @@ const Footwear = () => {
       <section className="donation-initiative">
         <div className="header-section">
           <div className="header-content">
-            <h2 className="title"><span><FaShoePrints /></span>SpareShare Footwear Donation Initiative</h2>
+            <h2 className="title"><span><FaShoePrints /></span>SurplusShare Footwear Donation Initiative</h2>
             <p className="subtitle">Join Us in Making a Difference!</p>
           </div>
           <p className="content">
-            At SpareShare, we are dedicated to providing essential footwear to those in need. Our footwear donation initiative aims to offer clean, gently-used shoes to individuals and families facing challenging times. By donating your pre-loved footwear, you help us ensure that everyone has access to essential footwear.
+            At SurplusShare, we are dedicated to providing essential footwear to those in need. Our footwear donation initiative aims to offer clean, gently-used shoes to individuals and families facing challenging times. By donating your pre-loved footwear, you help us ensure that everyone has access to essential footwear.
           </p>
           <p className="additional-info">
             Your generosity provides comfort and protection during daily activities, boosts self-esteem, and ensures that everyone has access to proper footwear. Each donation not only meets a basic need but also restores dignity and brings comfort to those who might otherwise go without. Together, we can make a tangible impact, one pair of shoes at a time, and build a more compassionate and supportive community for all.

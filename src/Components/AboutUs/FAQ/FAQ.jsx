@@ -9,9 +9,9 @@ const FAQ = () => {
 
   const questionsAnswers = [
     {
-      question: "What is SpareShare?",
+      question: "What is SurplusShare?",
       answer:
-        "SpareShare is a platform that connects event organizers and individuals with surplus food to NGOs and volunteers who can deliver or cook the food for those in need.",
+        "SurplusShare is a platform that connects event organizers and individuals with surplus food to NGOs and volunteers who can deliver or cook the food for those in need.",
     },
     {
       question: "How does the 7 o'clock scheme work?",
@@ -36,7 +36,7 @@ const FAQ = () => {
     {
       question: "How are donations used?",
       answer:
-        "Donations are used to fund the 7 o'clock scheme, cover delivery costs, and support the operational expenses of SpareShare.",
+        "Donations are used to fund the 7 o'clock scheme, cover delivery costs, and support the operational expenses of SurplusShare.",
     },
   ];
 
