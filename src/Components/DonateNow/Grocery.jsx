@@ -20,17 +20,17 @@ const Grocery = () => {
   const steps = [
     {
       id: 'Donate Groceries',
-      imgSrc: <FaAppleAlt size={80} />, 
+      imgSrc: <FaAppleAlt size={50} />, 
       description: 'Clear out your pantry and donate non-perishable groceries. Every item can make a difference.',
     },
     {
       id: 'Spread the Word',
-      imgSrc: <FaBullhorn size={80} />, 
+      imgSrc: <FaBullhorn size={50} />, 
       description: 'Encourage friends and family to contribute their extra groceries. Your efforts can have a big impact!',
     },
     {
       id: 'Volunteer',
-      imgSrc: <FaHandsHelping size={80} />, 
+      imgSrc: <FaHandsHelping size={50} />, 
       description: 'Join our team of volunteers to help with sorting, packing, and distributing grocery donations.',
     },
   ];
@@ -105,11 +105,7 @@ const Grocery = () => {
                 <img src={image} alt={`gallery-img-${index}`} />
               </div>
             ))}
-            {visibleImages < images.length && (
-              <div className="load-more" onClick={handleLoadMore}>
-                <span>+ Load More</span>
-              </div>
-            )}
+            
           </div>
         </div>
       </section>

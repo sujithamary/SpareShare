@@ -14,12 +14,17 @@
 }
 
 .header-section {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 30px;
 }
 
 .header-content {
-  display: flex;
-  flex-direction: column;
+  flex: 2;
+}
+
+.header-img {
+  flex: 1;
 }
 
 .header-img img {
@@ -32,13 +37,13 @@
 .header-content .title span {
   display: flex;  
   color: #135d66;
-  font-size: 40px;
+  font-size: 50px;
   padding-right: 12px;
 }
 
 .title {
-  color: #0e4a52;
-  font-size: 36px;
+  color: #135d66;
+  font-size: 50px;
   margin-bottom: 70px;
   display: flex;
   align-items: center;
@@ -81,6 +86,7 @@
 }
 
 .step-card {
+  background: linear-gradient(to right, #135d66, #4b8a92);
   background-color: #135d66;
   color: white;
   border-radius: 8px;
@@ -93,7 +99,6 @@
 }
 
 .step-card:hover {
-  background-color: #76abae;
   transform: scale(1.05);
 }
 
@@ -104,11 +109,12 @@
 .step-title {
   font-size: 22px;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
 
 .step-description {
   font-size: 16px;
+  line-height: 1.5em;
 }
 
 .gallery-section {
@@ -164,12 +170,6 @@
   transform: scale(1.1);
 }
 
-.load-more {
-  cursor: pointer;
-  font-size: 18px;
-  color: #0e4a52;
-  margin-top: 20px;
-}
 
 .popup-image {
   position: fixed;
@@ -203,7 +203,7 @@
   display: flex;
   flex-direction: row;
   background-color: #0e4a52;
-  padding: 50px 20px;
+  padding: 20px 80px;
   align-items: center;
   justify-content: space-between;
   width: 100%;
@@ -212,7 +212,7 @@
 
 .cta-subtitle {
   font-weight: normal;
-  font-size: 24px;
+  font-size: 23px;
   color: #d4d4d4;
 }
 

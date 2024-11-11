@@ -1,0 +1,64 @@
+.volunteer-impact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7f9f9;
+    padding: 70px;
+    border-radius: 8px;
+    margin-top: 2rem;
+  }
+  
+  .impact-text {
+    max-width: 60%;
+  }
+  
+  .impact-label {
+    display: inline-block;
+    background-color: #135D66;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .impact-text h2 {
+    font-size: 2em;
+    color: #333333;
+  }
+  
+  .highlight {
+    color: #135D66;
+    font-weight: bold;
+  }
+  
+  .cta-box {
+    background-color: #135D66;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cta-box h3 {
+    font-size: 1.25em;
+    margin-bottom: 10px;
+  }
+  
+  .cta-button {
+    background-color: white;
+    color: #135D66;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .cta-button:hover {
+    background-color: #c5dfdf;
+    color: #135D66;
+  }
+  

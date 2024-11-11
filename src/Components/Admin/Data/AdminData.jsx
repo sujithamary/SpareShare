@@ -48,8 +48,8 @@ export const topDealUsers = [
     {
         id: 7,
         img: "https://drmarkdoyle.com.au/wp-content/uploads/2022/09/perfect-face.jpg",
-        username: "User",
-        email: "user123@gmail.com",
+        username: "Anu sri",
+        email: "anu123@gmail.com",
         amount: "760.80",
     }
 ];

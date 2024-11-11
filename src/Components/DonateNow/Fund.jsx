@@ -20,17 +20,17 @@ const Fund = () => {
   const steps = [
     {
       id: 'Donate Funds',
-      imgSrc: <FaDollarSign size={80} />, 
+      imgSrc: <FaDollarSign size={50} />, 
       description: 'Contribute financially to support our initiatives. Every donation, big or small, helps us achieve our goals.',
     },
     {
       id: 'Spread the Word',
-      imgSrc: <FaBullhorn size={80} />, 
+      imgSrc: <FaBullhorn size={50} />, 
       description: 'Encourage friends and family to donate and support our cause. Your voice helps us reach more people!',
     },
     {
       id: 'Volunteer',
-      imgSrc: <FaHandsHelping size={80} />, 
+      imgSrc: <FaHandsHelping size={50} />, 
       description: 'Join our team of volunteers to help with fundraising events and activities. Your time and effort are invaluable.',
     },
   ];
@@ -105,11 +105,7 @@ const Fund = () => {
                 <img src={image} alt={`gallery-img-${index}`} />
               </div>
             ))}
-            {visibleImages < images.length && (
-              <div className="load-more" onClick={handleLoadMore}>
-                <span>+ Load More</span>
-              </div>
-            )}
+            
           </div>
         </div>
       </section>

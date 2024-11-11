@@ -21,17 +21,17 @@ const Cloth = () => {
   const steps = [
     {
       id: 'Donate Clothes',
-      imgSrc: <FaDonate size={80} />, 
+      imgSrc: <FaDonate size={50} />, 
       description: 'Clear out your closet and give a second life to your clothing. Every piece can make a difference.',
     },
     {
       id: 'Spread the Word',
-      imgSrc: <FaBullhorn size={80} />, 
+      imgSrc: <FaBullhorn size={50} />, 
       description: 'Encourage friends and family to contribute their gently-used clothes. Their support can make a big difference!',
     },
     {
       id: 'Volunteer',
-      imgSrc: <FaHandsHelping size={80} />, 
+      imgSrc: <FaHandsHelping size={50} />, 
       description: 'Join our team of dedicated volunteers to help with sorting, packing, and distributing donations.',
     },
   ];
@@ -107,11 +107,7 @@ const Cloth = () => {
                 <img src={image} alt={`gallery-img-${index}`} />
               </div>
             ))}
-            {visibleImages < images.length && (
-              <div className="load-more" onClick={handleLoadMore}>
-                <span>+ Load More</span>
-              </div>
-            )}
+            
           </div>
         </div>
       </section>

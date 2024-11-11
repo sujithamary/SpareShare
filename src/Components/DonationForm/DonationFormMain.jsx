@@ -51,13 +51,13 @@ function DonationForm() {
           <h2 className="form-title">Donation Form</h2>
           <div className="steps">
             <div className={`step ${activeTab === 'personal' ? 'active' : ''}`} onClick={() => setActiveTab('personal')}>
-              <span>1</span> Account Type
+              <span>1</span> Personal Information
             </div>
             <div className={`step ${activeTab === 'category' ? 'active' : ''}`} onClick={() => setActiveTab('category')}>
-              <span>2</span> Personal Information
+              <span>2</span> Category Type
             </div>
             <div className={`step ${activeTab === 'address' ? 'active' : ''}`} onClick={() => setActiveTab('address')}>
-              <span>3</span> Profile Data
+              <span>3</span> Address
             </div>
           </div>
           <form onSubmit={handleSubmit} className="donation-form-main">

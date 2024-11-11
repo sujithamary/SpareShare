@@ -1,0 +1,52 @@
+.volunteer-hero {
+    position: relative;
+    background-image: url('https://www.cityofnewportrichey.org/wp-content/uploads/2018/04/volunteer.png'); 
+    background-size: cover;
+    background-position: center;
+    height: 430px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(19, 93, 102, 0.8); 
+    z-index: 1;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .label {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+  
+  h1 {
+    font-size: 3em;
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  .v-highlight {
+    /* font-style: italic; */
+    color: #000;
+  }
+
+  
+  
+  

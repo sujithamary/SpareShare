@@ -27,9 +27,12 @@ import DonationForm from './Components/DonationForm/DonationFormMain';
 import LandingPage from './Components/User/LandingPage/LandingPage';
 import AdminDonation from './Components/Admin/Components/AdminDonationHandling/AdminDonation';
 import DonationList from './Components/Admin/Components/AdminDonationHandling/DonationList';
-import VolunteerNavbar from './Components/Volunteers/VolunteerNavbar/VolunteerNavbar';
-import VolunteerDonationHandling from './Components/Volunteers/VolunteerDonationHandling/VolunteerDonationHandling';
+// import VolunteerNavbar from './Components/Volunteers/VolunteerNavbar/VolunteerNavbar';
+// import VolunteerDonationHandling from './Components/Volunteers/VolunteerDonationHandling/VolunteerDonationHandling';
 import VolunteerRegistrationForm from './Components/Volunteers/VolunteerRegistration/VolunteerRegister';
+// import FeaturedIn from './Components/Home/Ngo';
+import VolunteerLandingPage from './Components/Volunteers/VolunteerLandingPage/VolunteerLandingPage';
+import VolunteerAd from './Components/Volunteers/VolunteerAd/VolunteerAd';
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -47,6 +50,7 @@ function App() {
           <Route 
             path="/" 
             element={<LandingPage/>} 
+            // element = {<FeaturedIn/>}
           />
           <Route 
             path="/LoginForm" 
@@ -78,9 +82,11 @@ function App() {
           <Route path="/aDonationList" element={<DonationList/>} />
           <Route path='/aboutus' element={<AboutUsLandingPage/>} />
           <Route path="/donationform" element={<DonationForm/>}/>
-          <Route path='/vNavbar' element = {<VolunteerNavbar/>} />
-          <Route path='/vDonationHandling' element= {<VolunteerDonationHandling/>} />
-          <Route path='/vRegister' element = {<VolunteerRegistrationForm/>} />
+          {/* <Route path='/vNavbar' element = {<VolunteerNavbar/>} /> */}
+          {/* <Route path='/vDonationHandling' element= {<VolunteerDonationHandling/>} /> */}
+          <Route path='/vRegister' element = {<VolunteerRegistrationForm/>} />          
+          <Route path='/vLandingPage' element = {<VolunteerLandingPage/>} />
+          <Route path='/vAd' element = {<VolunteerAd/>} />
         </Routes>
       </div>
     </Router>

@@ -18,13 +18,7 @@ const AdminMenu = () => {
                 path: "/admin/aHome",
                 name: "Home",
                 icon: <IoHome />
-            },
-            {
-                id: 2,
-                path: "/admin/aProfile",
-                name: "Profile",
-                icon: <CgProfile />
-            },
+            }
           ],
         },
         {
@@ -48,33 +42,10 @@ const AdminMenu = () => {
                 path: "/admin/aDonations",
                 name: "Donations",
                 icon: <FaDonate />
-              },
-              {
-                id: 4,
-                path: "/admin/aPosts",
-                name: "Posts",
-                icon: <MdPostAdd />
               }
             ],
         },
-        {
-            id: 5,
-            title: "Analytics",
-            listitems: [
-              {
-                  id: 1,
-                  path: "/admin/aCharts",
-                  name: "Charts",
-                  icon: <IoBarChartSharp />
-              },
-              {
-                  id: 2,
-                  path: "/admin/aLogs",
-                  name: "Logs",
-                  icon: <IoLogoBuffer />
-              }
-            ],
-        }       
+              
     ];
 
   return (
